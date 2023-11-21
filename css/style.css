@@ -1,5 +1,18 @@
 /* GLOBAL STYLES (Desktop First for now) */
-
+:root {
+  --primary-color: #1a1a1a;
+  --secondary-color: #f2f2f2;
+  --accent-color: #ff5a5f;
+  --accent-color-light: #ff7b7f;
+  --accent-color-dark: #e00000;
+  --accent-color-darker: #b20000;
+  --accent-color-darkest: #8c0000;
+  --accent-color-darkest-2: #660000;
+  --accent-color-darkest-3: #400000;
+  --accent-color-darkest-4: #1a0000;
+  --accent-color-darkest-5: #000000;
+  --accent-color-darkest-6: #000000;
+}
 
 
 /* RESPONSIVE MEDIA QUERIES */
