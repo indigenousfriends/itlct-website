@@ -5,7 +5,10 @@
 /* GLOBAL STYLES (Desktop First for now) */
 
 /* HEADER STYLES */
-
+header {
+    width:100%;
+    background-image:url("../assets/images/hero-image.png");
+    }
 /* WHO WE ARE STYLES */
 
 /* WHAT WE DO STYLES */
