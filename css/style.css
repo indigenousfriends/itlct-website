@@ -8,6 +8,11 @@
 header {
     width:100%;
     background-image:url("../assets/images/hero-image.png");
+    background-image: position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+           
     }
 /* WHO WE ARE STYLES */
 
