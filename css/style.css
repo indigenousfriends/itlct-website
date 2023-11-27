@@ -16,8 +16,15 @@ header {
 /* CONTACT FORM STYLES */
 
 /* FOOTER SECTION STYLES */
+footer{
+    display: flex;
+    flex-direction: row;
+}
 
 /* RESPONSIVE MEDIA QUERIES */
+.social-icons{
+    list-style-type: none;
+}
 
 /* Tablet */
 
