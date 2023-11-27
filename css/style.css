@@ -1,19 +1,46 @@
 /* BOX SIZING */
 
 /* VARIABLES */
+svg {
+    width: 48px;
+    height: 48px;
+    display: block;
+}
+
+/* logo container */
+.logohead {
+    width: 250px;
+    height: 100px;
+}
+
+.footlogo {
+    width: 250px;
+    height: 100px;
+}
 
 /* GLOBAL STYLES (Desktop First for now) */
-ul li{
+html{
+
+}
+body{
+    
+}
+ul li {
     list-style-type: none;
 }
 
 /* HEADER STYLES */
 header {
-    width:100%;
-    background-image:url("../assets/images/hero-image.png");      
-    background-position:center;
+    width: 100%;
+    background-image: url("../assets/images/hero-image.png");
+    background-position: center;
     background-size: cover;
 }
+social-media-icons{
+    display: flex;
+    flex-direction: row;
+}
+
 /* WHO WE ARE STYLES */
 
 /* WHAT WE DO STYLES */
@@ -21,8 +48,6 @@ header {
 /* CONTACT FORM STYLES */
 
 /* FOOTER SECTION STYLES */
-
-
 
 /* RESPONSIVE MEDIA QUERIES */
 
