@@ -3,6 +3,9 @@
 /* VARIABLES */
 
 /* GLOBAL STYLES (Desktop First for now) */
+ul li{
+    list-style-type: none;
+}
 
 /* HEADER STYLES */
 header {
@@ -21,15 +24,10 @@ header {
 /* CONTACT FORM STYLES */
 
 /* FOOTER SECTION STYLES */
-footer{
-    display: flex;
-    flex-direction: row;
-}
+
+
 
 /* RESPONSIVE MEDIA QUERIES */
-.social-icons{
-    list-style-type: none;
-}
 
 /* Tablet */
 
