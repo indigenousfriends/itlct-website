@@ -19,12 +19,10 @@ svg {
 }
 
 /* GLOBAL STYLES (Desktop First for now) */
-html{
+html {}
 
-}
-body{
-    
-}
+body {}
+
 ul li {
     list-style-type: none;
 }
@@ -36,10 +34,22 @@ header {
     background-position: center;
     background-size: cover;
 }
-social-media-icons{
+
+social-media-icons {
     display: flex;
     flex-direction: row;
 }
+
+.svg-icon {
+    fill:coral;
+    transition: all 0.3s ease;
+  }
+  
+  .svg-icon:hover,
+  .svg-icon:focus  {
+    fill: hotpink;
+  }
+  
 
 /* WHO WE ARE STYLES */
 
