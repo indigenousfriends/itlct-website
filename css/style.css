@@ -2,54 +2,55 @@
 
 /* VARIABLES */
 svg {
-    width: 48px;
-    height: 48px;
-    display: block;
+  width: 48px;
+  height: 48px;
+  display: block;
 }
 
 /* logo container */
 .logohead {
-    width: 250px;
-    height: 100px;
+  width: 250px;
+  height: 100px;
 }
 
 .footlogo {
-    width: 250px;
-    height: 100px;
+  width: 250px;
+  height: 100px;
 }
 
 /* GLOBAL STYLES (Desktop First for now) */
-html {}
+html {
+}
 
-body {}
+body {
+}
 
 ul li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 /* HEADER STYLES */
 header {
-    width: 100%;
-    background-image: url("../assets/images/hero-image.png");
-    background-position: center;
-    background-size: cover;
+  width: 100%;
+  background-image: url("../assets/images/hero-image.png");
+  background-position: center;
+  background-size: cover;
 }
 
 social-media-icons {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
-
+/* Need to replace color with variables */
 .svg-icon {
-    fill:coral;
-    transition: all 0.3s ease;
-  }
-  
-  .svg-icon:hover,
-  .svg-icon:focus  {
-    fill: hotpink;
-  }
-  
+  fill: #424241;
+  transition: all 0.3s ease;
+}
+/* Need to replace color with variables */
+.svg-icon:hover,
+.svg-icon:focus {
+  fill: #007a80;
+}
 
 /* WHO WE ARE STYLES */
 
