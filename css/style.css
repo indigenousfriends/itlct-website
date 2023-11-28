@@ -11,6 +11,41 @@
 /* WHAT WE DO STYLES */
 
 /* CONTACT FORM STYLES */
+/* BUTTON STYLES */
+button {
+    background-color: var(--Teal);
+    color: var(--secondary-color);
+    font-family: var(--button-text);
+    font-size: var(--font100);
+    border: transparent solid 4px;
+    align-items: center;
+    font-weight: var(--bold);
+    transition-duration: 0.2s;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button:hover,
+button:focus {
+    background-color: var(--DarkTeal);
+    color: var(--secondary-color);
+    align-items: center;
+    cursor: pointer;
+}
+
+button:focus {
+    outline-color: var(--DarkTeal);
+    border-color: var(--DarkTeal);
+    align-items: center;
+}
+
+button:active {
+    background-color: var(--Teal);
+    outline-style: solid;
+    outline-color: var(--LightTeal);
+    align-items: center;
+    border-color: transparent;
+}
 
 /* FOOTER SECTION STYLES */
 
