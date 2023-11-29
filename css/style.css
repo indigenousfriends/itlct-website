@@ -1,12 +1,136 @@
 /* BOX SIZING */
 
+html { box-sizing: border-box; }
+
+*, *:before, *:after { box-sizing: inherit; }
+
+
 /* VARIABLES */
 
+:root {
+    /* font families variables- linking fonts to the styles */
+    --main-headings: 'Josefin Sans', sans-serif;
+    --body-text: 'lato', sans-serif;
+    --detail-text: 'lato', sans-serif;
+    --button-text: 'Josefin Sans', sans-serif;
+    --main-headings-400: 400; 
+    --main-headings-500: 500;
+    --main-headings-600: 600;
+    --main-headings-regular: 700;
+    --main-headings-800: 800;
+    --main-headings-900: 900;
+    --body-text-100: 100;
+    --body-text-200: 200;
+    --body-text-300: 300;
+    --body-text-400: 400;
+    --body-text-regular: 500;
+    --body-text-600: 600;
+    --detail-text-1: 14px;
+    --detail-text-2: 16px;
+    --button-text: 700;
+
+    /* colors */
+    --bg-color: #FAFAFA;
+    --secondary-color: #FFFFFF;
+    --text-color: #1A1A1A;
+    --form-select: #000;
+    --form-unselected: #808080;
+    --form-unselected: rgb(92, 92, 92);
+    --form-gray: #C5C5C5;
+    --amaranth: #D94252;
+    --teal: #007A80;
+    --dark-teal: #00585c;
+    --light-teal: #00c6d0;
+    --cybergrape: #6C4681;
+    --onyx: #424241;
+    --yaleblue: #00478F;
+    --hotpink: #FA6CB7;
+    --citrine: #D3C53F;
+    --citron: #92A32D;
+    --bcitron: #B37122;
+
+    /* font sizes */
+    --font50: 14px 0.875rem;
+    --font100: 16px 1rem;
+    --font200: 20px 1.25rem;
+    --font300: 24px 1.5rem;
+    --font400: 28px 1.75rem;
+    --font500: 32px 2rem;
+    --font600: 40px 2.5rem;
+    --font700: 48px 3rem;
+    --font800: 56px 3.5rem;
+    --font900: 64px 4rem;
+    --bold: bold;
+    --underline: underline;
+
+    /* variable for wrapper width */
+    --wrapper-width: 60%;
+
+    /* spacing variables */
+    --spacing-small: 16px;
+    --spacing-intermediate: 24px;
+    --spacing-medium: 32px;
+    --spacing-large: 64px;
+    --spacing-xl: 96px;
+    --spacing-xxl: 180px;
+    --spacing-xxxl: 352px;
+}
+
 /* GLOBAL STYLES (Desktop First for now) */
+.wrapper {
+    width: var(--wrapper-width);
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
 /* HEADER STYLES */
 
 /* WHO WE ARE STYLES */
+
+.who-we-are h2, .who-we-are .overlay {
+    font-family: var( --main-headings);
+    font-size: var(--font600);
+    font-weight: var(--main-headings-regular);
+    color: var(--text-color);
+}
+.who-we-are .overlay {
+    color: var(--secondary-color);
+    padding-top: 75px;
+}
+.who-we-are p {
+    font-family: var(--body-text);
+    font-size: var(--font300);
+    font-weight: var( --body-text-regular);
+    color: var( --text-color);
+}
+.ecosystem-banner {
+    background-image: url(../assets/images/global-ecosystem.png);
+    width: 100%;
+    height: 105px;
+}
+
+blockquote {
+    font-family: var(--main-headings);
+    font-size: var( --font300);
+    font-weight: var(--main-headings-600);
+    color: var(--teal);
+    font-style: italic;
+    padding-left: var(--spacing-xl);
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 1.5rem;
+}
+.solid-line-indent{
+    position:relative;
+}
+.solid-line-indent::before{
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 64px;
+    border-bottom: 3px solid var(--teal);
+}
 
 /* WHAT WE DO STYLES */
 
@@ -17,5 +141,23 @@
 /* RESPONSIVE MEDIA QUERIES */
 
 /* Tablet */
-
+@media screen and (max-width: 768px) {
+  }
 /* Phone */
+@media screen and (max-width: 480px) {
+    /* Global Wrapper (adjusting width variable) */
+    :root {
+        /* increasing wrapper width- to take up more screen */
+        --wrapper-width: 90%
+    }
+    /* Who We Are styles */
+    /* reduced the indent */
+    blockquote {
+        padding-left: var(--spacing-medium);
+        margin-bottom: var(--spacing-large);
+    }
+    /* reduced the size of the - before the blockquote */
+    .solid-line-indent::before{
+        width: 16px;
+    }
+}
