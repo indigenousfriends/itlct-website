@@ -1,6 +1,3 @@
-
-/* BorBox, DELETE LATER */
-html { box-sizing: border-box; }
 /* WHO WE ARE STYLES */
 /* hero background image styles complete */
 .hero-image {
@@ -11,95 +8,11 @@ html { box-sizing: border-box; }
     display: flex;
     align-items: flex-end;
 }
-H3 {
-    color: red;
-}
-.text-wrapper {
-    width: 60%;
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
-    border: 5px solid blanchedalmond;
-}
-
-.text-box{
-    margin: 10px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-{
-    font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Nunito Sans', sans-serif;
-    font-family: 'PT Sans', sans-serif;    
-
-}
 
 /* CURRENTLY WORKING ON CARDS */
 
 /* Theres was small space on the left of the ul so this is to get rid that */
-ul {
-    padding: 0px;
-}
 
 /* This is the container for each li (card-item) within the ul */
-.card-item {
-    /* exact top/bottom margin needed */
-    margin: 20px auto;
-    width: 100%;
-    padding: 24px;
-    
-    /* placed in flexbox to put img and text side by side */
-    display: flex;
-    align-items: center;
-    gap: 32px;
-
-    background-color: var(--secondary-color);
-    border: 1px solid #DBDBDB;
-    border-radius: 8px; 
-}
-
-
-
-/* Card-text Typography*/
-.card-text h3 {
-    color: var(--text-color);
-    font-size: var(--font500);
-    font-weight: var(--main-headings-regular);
-    font-family: var(--main-headings);
-    
-    font-style: normal;
-    /* line-height: 32px; */
-}
-
-.card-text p {
-    color: var(--text-color);
-    font-family: var(--detail-text);
-    font-size: var(--font300);
-    font-weight: var(--body-text-regular);
-    
-    font-style: normal;
-    /* line-height: 32px;  */
-}
 
 /* MEDIA QUERIES */
-
-@media (max-width: 768px) {
-    .what-we-do {
-        background-color: #FFF;
-    }
-
-    /* from row to columns */
-    ul {
-       display: flex;
-       flex-direction: column; 
-    }
-
-    .card-item {
-        flex-direction: column;
-        background-color: #FFF;
-        align-items: flex-start;
-    }
-    
-    
-}
