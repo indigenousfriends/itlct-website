@@ -136,7 +136,7 @@ blockquote {
 
 /* CONTACT FORM STYLES */
 
-
+/* background & sizing for form container */
 .form-text-container {
     width: 432px;
     min-height: 597px;
@@ -147,7 +147,7 @@ blockquote {
     background-position: center;
     background-size: cover;
 }
-
+/* heading for form-text-container */
 .form-text-container h2 {
     color: var(--bg-color);
     font-family: var(--font-family-headings);
@@ -156,7 +156,7 @@ blockquote {
     font-weight: 700;
     line-height: normal;
 }
-
+/* paragraphs styles for form text container */
 .form-text-container p {
     width: 384px;
     color: var(--bg-color);
