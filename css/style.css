@@ -50,16 +50,16 @@ html { box-sizing: border-box; }
     --bcitron: #B37122;
 
     /* font sizes */
-    --font50: 14px 0.875rem;
-    --font100: 16px 1rem;
-    --font200: 20px 1.25rem;
-    --font300: 24px 1.5rem;
-    --font400: 28px 1.75rem;
-    --font500: 32px 2rem;
-    --font600: 40px 2.5rem;
-    --font700: 48px 3rem;
-    --font800: 56px 3.5rem;
-    --font900: 64px 4rem;
+    --font50: 0.875rem;
+    --font100: 1rem;
+    --font200: 1.25rem;
+    --font300: 1.5rem;
+    --font400: 1.75rem;
+    --font500: 2rem;
+    --font600: 2.5rem;
+    --font700: 3rem;
+    --font800: 3.5rem;
+    --font900: 4rem;
     --bold: bold;
     --underline: underline;
 
