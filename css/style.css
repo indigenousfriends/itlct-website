@@ -137,13 +137,13 @@ blockquote {
 /* CONTACT FORM STYLES */
 
 
-.form-container {
+.form-text-container {
     width: 432px;
     min-height: 597px;
     border-radius: 4px;
     background: var(--bg-color);
-    padding: 25px;
-    background-image: url("./contact-form.png");
+    padding: 20px;
+    background-image: url("../assets/images/contact-form.png");
     background-position: center;
     background-size: cover;
 }
