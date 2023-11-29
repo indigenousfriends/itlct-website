@@ -134,6 +134,56 @@ blockquote {
 
 /* WHAT WE DO STYLES */
 
+.wwd-heading {
+    color: var(--text-color);
+    font-family: var(--main-headings);
+    font-size: var(--font600);
+    font-weight: var(--main-headings-regular);
+}
+
+
+/* CURRENTLY WORKING ON CARDS */
+
+/* Theres was small space on the left of the ul so this is to get rid that */
+ul {
+    padding: 0px;
+}
+
+/* This is the container for each li (card-item) within the ul */
+.card-item {
+    /* exact top/bottom margin needed */
+    margin: 20px auto;
+    width: 100%;
+    padding: var(--spacing-intermediate);
+    
+    /* placed in flexbox to put img and text side by side */
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-medium);
+
+    background-color: var(--secondary-color);
+    border: 1px solid #DBDBDB;
+    border-radius: 8px; 
+}
+
+
+
+/* Card-text Typography*/
+.card-text h3 {
+    color: var(--text-color);
+    font-family: var(--main-headings);
+    font-size: var(--font500);
+    font-weight: var(--main-headings-regular);
+}
+
+.card-text p {
+    color: var(--text-color);
+    font-family: var(--body-text);
+    font-size: var(--font300);
+    font-weight: var(--body-text-regular);
+}
+
+
 /* CONTACT FORM STYLES */
 
 /* FOOTER SECTION STYLES */
@@ -142,6 +192,33 @@ blockquote {
 
 /* Tablet */
 @media screen and (max-width: 768px) {
+
+    /* What We Do Section */
+     /* font size change */
+     .wwd-heading {
+        font-size: var(--font500);
+    }
+   
+
+    .card-item {
+        /* from row to columns */
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 25px auto;
+    }
+
+   /* font size change */
+    .card-text h3 {
+        font-size: var(--font400);
+    }
+
+   /* font size change */
+    .card-text p {
+        font-size: var(--font200);
+    }
+
+    
+
   }
 /* Phone */
 @media screen and (max-width: 480px) {
