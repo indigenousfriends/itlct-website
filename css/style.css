@@ -3,7 +3,12 @@
 /* VARIABLES */
 
 /* GLOBAL STYLES (Desktop First for now) */
-
+/* global img style */
+img, svg {
+    width: 100%;
+    /* removes white space */
+    display: block;
+  }
 /* HEADER STYLES */
 
 /* WHO WE ARE STYLES */
@@ -13,7 +18,16 @@
 /* CONTACT FORM STYLES */
 
 /* FOOTER SECTION STYLES */
-
+/* footer flex layout */
+.footer-nav {
+    display: flex;
+    justify-content: space-between; /*for space between */
+    
+  }
+  /* social icons flex layout */
+  .social-icons {
+   display: flex;
+  }
 /* RESPONSIVE MEDIA QUERIES */
 
 /* Tablet */
