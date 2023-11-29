@@ -87,7 +87,7 @@ html { box-sizing: border-box; }
 
 /* WHO WE ARE STYLES */
 
-.who-we-are h2, .who-are-we .overlay {
+.who-we-are h2, .who-we-are .overlay {
     font-family: var( --main-headings);
     font-size: var(--font600);
     font-weight: var(--main-headings-regular);
