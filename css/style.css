@@ -138,6 +138,69 @@ blockquote {
 
 /* FOOTER SECTION STYLES */
 
+/* LEFT AND RIGHT SCROLLING GALLERY IN THE FOOTER */
+.gallery-container {
+    height: 842px;
+    display: flex;
+    flex-direction: column;
+  }
+  .group-one {
+    padding-bottom: 16px;
+  }
+  .group-two {
+    padding-top: 16px;
+  }
+  .group-one, .group-two {
+    height: 405px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .group-one img {
+    right: -265px;
+    position: relative;
+    z-index: 0;
+    margin:0 12px;
+    padding:0;
+    -webkit-transition: right 1s;
+    -moz-transition: right 1s;
+    -ms-transition: right 1s;
+    -o-transition: right 1s;
+    transition: 1s;
+  }
+  .group-one:hover img {
+  right: 265px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+  }
+  .group-two img {
+    right: -148px;
+    position: relative;
+    z-index: 0;
+    margin:0 12px;
+    padding:0;
+    -webkit-transition: right 1s;
+    -moz-transition: right 1s;
+    -ms-transition: right 1s;
+    -o-transition: right 1s;
+    transition: 1s;
+  }
+  .group-two:hover img {
+    right: 148px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+  }
+/* END OF THE LEFT AND RIGHT SCROLLING GALLERY IN THE FOOTER */
+
 /* RESPONSIVE MEDIA QUERIES */
 
 /* Tablet */
