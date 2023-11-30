@@ -50,16 +50,16 @@ html { box-sizing: border-box; }
     --bcitron: #B37122;
 
     /* font sizes */
-    --font50: 14px 0.875rem;
-    --font100: 16px 1rem;
-    --font200: 20px 1.25rem;
-    --font300: 24px 1.5rem;
-    --font400: 28px 1.75rem;
-    --font500: 32px 2rem;
-    --font600: 40px 2.5rem;
-    --font700: 48px 3rem;
-    --font800: 56px 3.5rem;
-    --font900: 64px 4rem;
+    --font50: 0.875rem;
+    --font100: 1rem;
+    --font200: 1.25rem;
+    --font300: 1.5rem;
+    --font400: 1.75rem;
+    --font500: 2rem;
+    --font600: 2.5rem;
+    --font700: 3rem;
+    --font800: 3.5rem;
+    --font900: 4rem;
     --bold: bold;
     --underline: underline;
 
@@ -135,6 +135,91 @@ blockquote {
 /* WHAT WE DO STYLES */
 
 /* CONTACT FORM STYLES */
+/* the font appearance for the contact form section */
+.contact-form {
+  color: var(--text-color);
+  font-family: var(--main-headings);
+  font-size: var(--font600);
+  font-weight: var(--main-headings-regular);
+}
+
+/* container styling for form-text container and input-container */
+.form-container {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-family: var(--main-headings);
+  font-weight: var(--main-headings-400);
+  font-size: var(--font300);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+form {
+  border: 1px solid var(--form-gray);
+  padding: 10px;
+}
+
+/* Shan - image for the text overlay  */
+/* Shan - text overlay on image  */
+
+/* form div flex box*/
+.contact-us-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+/* flexbox for form sections that can be filled out */
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* first and last name div */
+.name-input-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+/* flex box for the button on the form */
+.submit-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Kyla - button styles */
+
+/* form input styling */
+input[type="text"],
+[type="email"],
+select,
+textarea {
+  font-family: var(--detail-text);
+  font-size: var(--font200);
+  font-weight: var(--body-text-400);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  border: 1px solid var(--form-gray);
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+/* to keep the 'select' dropdown text uniform with the rest of the form */
+option {
+  color: var(--form-select);
+}
+/* this keeps the select option 'ghosted' when unselected */
+.form-item-select {
+  /* // The select element is set to required as long as the selected options value is empty the element is not valid.*/
+  &:invalid {
+    color: var(--form-unselected);
+  }
+}
 
 /* FOOTER SECTION STYLES */
 
