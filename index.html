@@ -184,23 +184,47 @@
                 <!-- first name -->
                 <div class="input-container name-inputs">
                   <label for="first-name">First name</label>
-                  <input type="text" id="first-name" name="first-name" />
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    required
+                    placeholder="First name"
+                  />
                 </div>
                 <!-- last name  -->
                 <div class="input-container name-inputs">
                   <label for="last-name">Last name</label>
-                  <input type="text" id="last-name" name="last-name" />
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    required
+                    placeholder="Last name"
+                  />
                 </div>
               </div>
               <!-- email  -->
               <div class="input-container">
                 <label for="email">Email</label>
-                <input type="text" id="email" name="email" />
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Email"
+                />
               </div>
               <!-- drop down -->
               <div class="input-container">
                 <label for="contact-dropdown">What can we help you with?</label>
-                <select name="contact-dropdown" id="contact-dropdown">
+                <select
+                  name="contact-dropdown"
+                  id="contact-dropdown"
+                  class="form-item-select"
+                  required
+                >
+                  <option disabled value="" selected>Select</option>
                   <option value="general">General</option>
                   <option value="events-programming">
                     Events & Programming
@@ -216,6 +240,7 @@
                   name="description"
                   id="description"
                   required="true"
+                  placeholder="Description"
                 ></textarea>
               </div>
               <!-- submit button -->
