@@ -258,6 +258,11 @@ option {
 
 /* Tablet */
 @media screen and (max-width: 768px) {
+
+    .form-text-container {
+        background-image: url("../assets/mobile/contact-form.png");
+    }
+
   }
 /* Phone */
 @media screen and (max-width: 480px) {
@@ -276,4 +281,6 @@ option {
     .solid-line-indent::before{
         width: 16px;
     }
+
+    
 }
