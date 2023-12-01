@@ -1,135 +1,355 @@
 /* BOX SIZING */
 
-html { box-sizing: border-box; }
+html {
+	box-sizing: border-box;
+}
 
-*, *:before, *:after { box-sizing: inherit; }
-
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
 
 /* VARIABLES */
+:root {
+	/* font families variables- linking fonts to the styles */
+	--main-headings: 'Josefin Sans', sans-serif;
+	--body-text: 'lato', sans-serif;
+	--detail-text: 'lato', sans-serif;
+	--button-text: 'Josefin Sans', sans-serif;
+	--main-headings-400: 400;
+	--main-headings-500: 500;
+	--main-headings-600: 600;
+	--main-headings-regular: 700;
+	--main-headings-800: 800;
+	--main-headings-900: 900;
+	--body-text-100: 100;
+	--body-text-200: 200;
+	--body-text-300: 300;
+	--body-text-400: 400;
+	--body-text-regular: 500;
+	--body-text-600: 600;
+	--detail-text-1: 14px;
+	--detail-text-2: 16px;
+	--button-text: 700;
+
+	/* colors */
+	--bg-color: #fafafa;
+	--secondary-color: #ffffff;
+	--text-color: #1a1a1a;
+	--form-gray: #c5c5c5;
+	--amaranth: #d94252;
+	--teal: #007a80;
+	--cybergrape: #6c4681;
+	--onyx: #424241;
+	--yaleblue: #00478f;
+	--hotpink: #fa6cb7;
+	--citrine: #d3c53f;
+	--citron: #92a32d;
+	--bcitron: #b37122;
+
+	/* font sizes */
+	--font50: 14px 0.875rem;
+	--font100: 16px 1rem;
+	--font200: 20px 1.25rem;
+	--font300: 24px 1.5rem;
+	--font400: 28px 1.75rem;
+	--font500: 32px 2rem;
+	--font600: 40px 2.5rem;
+	--font700: 48px 3rem;
+	--font800: 56px 3.5rem;
+	--font900: 64px 4rem;
+	--bold: bold;
+	--underline: underline;
+
+	/* variable for wrapper width */
+	--wrapper-width: 60%;
+
+	/* spacing variables */
+	--spacing-small: 16px;
+	--spacing-intermediate: 24px;
+	--spacing-medium: 32px;
+	--spacing-large: 64px;
+	--spacing-xl: 96px;
+	--spacing-xxl: 180px;
+	--spacing-xxxl: 352px;
+}
+
+/* variable for wrapper width */
+:root {
+	--wrapper-width: 60%;
+}
+
+/* GLOBAL STYLES (Desktop First for now) */
+
+/* HEADER STYLES */
+.title-section {
+	position: relative;
+	margin: 100px;
+	margin-right: 300px;
+	padding-left: 15px;
+	text-align: left;
+}
+
+h1 {
+	color: var(--Black, #1a1a1a);
+	font-family: 'Lato', sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 32px;
+	position: absolute;
+}
+
+h2 {
+	color: var(--Teal, #007a80);
+	font-family: Josefin Sans;
+	font-size: 64px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 72px;
+	margin-top: 75px;
+}
+
+/* Styling for "Website under Construction" */
+
+.under-construction {
+	border-bottom: 4px solid #d94252;
+	background: linear-gradient(0deg, #ff7a88 0%, #ff7a88 100%), #fff;
+	width: auto;
+	height: 46px;
+	text-align: center;
+	position: relative;
+	padding: 5px;
+}
+
+.wuc-paragraph {
+	color: #1a1a1a;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px;
+	margin: 10px;
+}
+
+.under-construction-button {
+	background: linear-gradient(0deg, #ff7a88 0%, #ff7a88 100%);
+	width: 24px;
+	height: 24px;
+	border: none;
+	position: absolute;
+	top: 30%;
+	right: 1%;
+	cursor: pointer;
+}
+
+/* Hero Section */
+
+/* whAT TERRY SENT */
+svg {
+	width: 48px;
+	height: 48px;
+	display: block;
+}
+
+/* Need to replace color with variables */
+.svg-icon {
+	fill: #424241;
+	transition: all 0.3s ease;
+}
+
+/* Need to replace color with variables */
+.svg-icon:hover,
+.svg-icon:focus {
+	fill: #007a80;
+}
+
+/* logo container */
+.logohead {
+	width: 250px;
+	height: 100px;
+	padding: 30px;
+	margin-left: 90px;
+}
+
+.footlogo {
+	width: 250px;
+	height: 100px;
+}
 
 :root {
-    /* font families variables- linking fonts to the styles */
-    --main-headings: 'Josefin Sans', sans-serif;
-    --body-text: 'lato', sans-serif;
-    --detail-text: 'lato', sans-serif;
-    --button-text: 'Josefin Sans', sans-serif;
-    --main-headings-400: 400; 
-    --main-headings-500: 500;
-    --main-headings-600: 600;
-    --main-headings-regular: 700;
-    --main-headings-800: 800;
-    --main-headings-900: 900;
-    --body-text-100: 100;
-    --body-text-200: 200;
-    --body-text-300: 300;
-    --body-text-400: 400;
-    --body-text-regular: 500;
-    --body-text-600: 600;
-    --detail-text-1: 14px;
-    --detail-text-2: 16px;
-    --button-text: 700;
+	/* font families variables- linking fonts to the styles */
+	--main-headings: 'Josefin Sans', sans-serif;
+	--body-text: 'lato', sans-serif;
+	--detail-text: 'lato', sans-serif;
+	--button-text: 'Josefin Sans', sans-serif;
+	--main-headings-400: 400;
+	--main-headings-500: 500;
+	--main-headings-600: 600;
+	--main-headings-regular: 700;
+	--main-headings-800: 800;
+	--main-headings-900: 900;
+	--body-text-100: 100;
+	--body-text-200: 200;
+	--body-text-300: 300;
+	--body-text-400: 400;
+	--body-text-regular: 500;
+	--body-text-600: 600;
+	--detail-text-1: 14px;
+	--detail-text-2: 16px;
+	--button-text: 700;
 
-    /* colors */
-    --bg-color: #FAFAFA;
-    --secondary-color: #FFFFFF;
-    --text-color: #1A1A1A;
-    --form-select: #000;
-    --form-unselected: #808080;
-    --form-unselected: rgb(92, 92, 92);
-    --form-gray: #C5C5C5;
-    --amaranth: #D94252;
-    --teal: #007A80;
-    --dark-teal: #00585c;
-    --light-teal: #00c6d0;
-    --cybergrape: #6C4681;
-    --onyx: #424241;
-    --yaleblue: #00478F;
-    --hotpink: #FA6CB7;
-    --citrine: #D3C53F;
-    --citron: #92A32D;
-    --bcitron: #B37122;
+	/* colors */
+	--bg-color: #fafafa;
+	--secondary-color: #ffffff;
+	--text-color: #1a1a1a;
+	--form-select: #000;
+	--form-unselected: #808080;
+	--form-unselected: rgb(92, 92, 92);
+	--form-gray: #c5c5c5;
+	--amaranth: #d94252;
+	--teal: #007a80;
+	--dark-teal: #00585c;
+	--light-teal: #00c6d0;
+	--cybergrape: #6c4681;
+	--onyx: #424241;
+	--yaleblue: #00478f;
+	--hotpink: #fa6cb7;
+	--citrine: #d3c53f;
+	--citron: #92a32d;
+	--bcitron: #b37122;
 
-    /* font sizes */
-    --font50: 0.875rem;
-    --font100: 1rem;
-    --font200: 1.25rem;
-    --font300: 1.5rem;
-    --font400: 1.75rem;
-    --font500: 2rem;
-    --font600: 2.5rem;
-    --font700: 3rem;
-    --font800: 3.5rem;
-    --font900: 4rem;
-    --bold: bold;
-    --underline: underline;
+	/* font sizes */
+	--font50: 0.875rem;
+	--font100: 1rem;
+	--font200: 1.25rem;
+	--font300: 1.5rem;
+	--font400: 1.75rem;
+	--font500: 2rem;
+	--font600: 2.5rem;
+	--font700: 3rem;
+	--font800: 3.5rem;
+	--font900: 4rem;
+	--bold: bold;
+	--underline: underline;
 
-    /* variable for wrapper width */
-    --wrapper-width: 60%;
+	/* variable for wrapper width */
+	--wrapper-width: 60%;
 
-    /* spacing variables */
-    --spacing-small: 16px;
-    --spacing-intermediate: 24px;
-    --spacing-medium: 32px;
-    --spacing-large: 64px;
-    --spacing-xl: 96px;
-    --spacing-xxl: 180px;
-    --spacing-xxxl: 352px;
+	/* spacing variables */
+	--spacing-small: 16px;
+	--spacing-intermediate: 24px;
+	--spacing-medium: 32px;
+	--spacing-large: 64px;
+	--spacing-xl: 96px;
+	--spacing-xxl: 180px;
+	--spacing-xxxl: 352px;
 }
 
 /* GLOBAL STYLES (Desktop First for now) */
 .wrapper {
-    width: var(--wrapper-width);
-    max-width: 1440px;
-    margin: 0 auto;
+	width: var(--wrapper-width);
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+ul li {
+	list-style-type: none;
+	padding: 7px;
 }
 
 /* HEADER STYLES */
+header {
+	width: 100%;
+	background-image: url('../assets/images/hero-image.png');
+	background-position: center;
+	background-size: cover;
+}
 
-/* WHO WE ARE STYLES */
+.social-media-icons {
+	display: flex;
+	flex-direction: row;
+}
 
-.who-we-are h2, .who-we-are .overlay {
-    font-family: var( --main-headings);
-    font-size: var(--font600);
-    font-weight: var(--main-headings-regular);
-    color: var(--text-color);
+/* MIRANDAS CODE */
+/* header flex layout */
+header .wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/*for space around*/
+}
+
+.header-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.logo {
+	display: flex;
+	align-self: center;
+
+	/* to center the logo vertically */
+}
+
+.social-icons {
+	display: flex;
+	align-self: center;
+	justify-content: space-around;
+	padding: 30px;
+	margin-right: 100px;
+
+	/* to center the social icons vertically */
+}
+
+/* WHO WE ARE */
+
+.who-we-are h2,
+.who-we-are .overlay {
+	font-family: var(--main-headings);
+	font-size: var(--font600);
+	font-weight: var(--main-headings-regular);
+	color: var(--text-color);
 }
 .who-we-are .overlay {
-    color: var(--secondary-color);
-    padding-top: 75px;
+	color: var(--secondary-color);
+	padding-top: 75px;
 }
 .who-we-are p {
-    font-family: var(--body-text);
-    font-size: var(--font300);
-    font-weight: var( --body-text-regular);
-    color: var( --text-color);
+	font-family: var(--body-text);
+	font-size: var(--font300);
+	font-weight: var(--body-text-regular);
+	color: var(--text-color);
 }
 .ecosystem-banner {
-    background-image: url(../assets/images/global-ecosystem.png);
-    width: 100%;
-    height: 105px;
+	background-image: url(../assets/images/global-ecosystem.png);
+	width: 100%;
+	height: 105px;
 }
 
 blockquote {
-    font-family: var(--main-headings);
-    font-size: var( --font300);
-    font-weight: var(--main-headings-600);
-    color: var(--teal);
-    font-style: italic;
-    padding-left: var(--spacing-xl);
-    margin-left: 0;
-    margin-right: 0;
-    line-height: 1.5rem;
+	font-family: var(--main-headings);
+	font-size: var(--font300);
+	font-weight: var(--main-headings-600);
+	color: var(--teal);
+	font-style: italic;
+	padding-left: var(--spacing-xl);
+	margin-left: 0;
+	margin-right: 0;
+	line-height: 1.5rem;
 }
-.solid-line-indent{
-    position:relative;
+.solid-line-indent {
+	position: relative;
 }
-.solid-line-indent::before{
-    content: '';
-    position: absolute;
-    top: 10%;
-    left: 0;
-    width: 64px;
-    border-bottom: 3px solid var(--teal);
+.solid-line-indent::before {
+	content: '';
+	position: absolute;
+	top: 10%;
+	left: 0;
+	width: 64px;
+	border-bottom: 3px solid var(--teal);
 }
 
 /* WHAT WE DO STYLES */
@@ -138,150 +358,149 @@ blockquote {
 
 /* BUTTON STYLES */
 button {
-    background-color: var(--teal);
-    color: var(--secondary-color);
-    font-family: var(--button-text);
-    font-size: var(--font100);
-    border: transparent solid 4px;
-    align-items: center;
-    font-weight: var(--bold);
-    transition-duration: 0.2s;
-    padding: 5px;
-    border-radius: 5px;
+	background-color: var(--teal);
+	color: var(--secondary-color);
+	font-family: var(--button-text);
+	font-size: var(--font100);
+	border: transparent solid 4px;
+	align-items: center;
+	font-weight: var(--bold);
+	transition-duration: 0.2s;
+	padding: 5px;
+	border-radius: 5px;
 }
 
 button:hover,
 button:focus {
-    background-color: var(--dark-teal);
-    color: var(--secondary-color);
-    align-items: center;
-    cursor: pointer;
+	background-color: var(--dark-teal);
+	color: var(--secondary-color);
+	align-items: center;
+	cursor: pointer;
 }
 
 button:focus {
-    outline-color: var(--dark-teal);
-    border-color: var(--dark-teal);
-    align-items: center;
+	outline-color: var(--dark-teal);
+	border-color: var(--dark-teal);
+	align-items: center;
 }
 
 button:active {
-    background-color: var(--teal);
-    outline-style: solid;
-    outline-color: var(--light-teal);
-    align-items: center;
-    border-color: transparent;
+	background-color: var(--teal);
+	outline-style: solid;
+	outline-color: var(--light-teal);
+	align-items: center;
+	border-color: transparent;
 
-/* the font appearance for the contact form section */
-.contact-form {
-  color: var(--text-color);
-  font-family: var(--main-headings);
-  font-size: var(--font600);
-  font-weight: var(--main-headings-regular);
-}
+	/* the font appearance for the contact form section */
+	.contact-form {
+		color: var(--text-color);
+		font-family: var(--main-headings);
+		font-size: var(--font600);
+		font-weight: var(--main-headings-regular);
+	}
 
-/* container styling for form-text container and input-container */
-.form-container {
-  background-color: var(--secondary-color);
-  color: var(--text-color);
-  font-family: var(--main-headings);
-  font-weight: var(--main-headings-400);
-  font-size: var(--font300);
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
+	/* container styling for form-text container and input-container */
+	.form-container {
+		background-color: var(--secondary-color);
+		color: var(--text-color);
+		font-family: var(--main-headings);
+		font-weight: var(--main-headings-400);
+		font-size: var(--font300);
+		padding: 20px;
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+	}
 
-form {
-  border: 1px solid var(--form-gray);
-  padding: 10px;
-}
+	form {
+		border: 1px solid var(--form-gray);
+		padding: 10px;
+	}
 
-/* Shan - image for the text overlay  */
-/* Shan - text overlay on image  */
+	/* Shan - image for the text overlay  */
+	/* Shan - text overlay on image  */
 
-/* form div flex box*/
-.contact-us-form {
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-}
+	/* form div flex box*/
+	.contact-us-form {
+		display: flex;
+		flex-direction: column;
+		row-gap: 10px;
+	}
 
-/* flexbox for form sections that can be filled out */
-.input-container {
-  display: flex;
-  flex-direction: column;
-}
+	/* flexbox for form sections that can be filled out */
+	.input-container {
+		display: flex;
+		flex-direction: column;
+	}
 
-/* first and last name div */
-.name-input-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 10px;
-}
-/* flex box for the button on the form */
-.submit-button {
-  display: flex;
-  justify-content: flex-end;
-}
+	/* first and last name div */
+	.name-input-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		gap: 10px;
+	}
+	/* flex box for the button on the form */
+	.submit-button {
+		display: flex;
+		justify-content: flex-end;
+	}
 
-/* Kyla - button styles */
+	/* Kyla - button styles */
 
-/* form input styling */
-input[type="text"],
-[type="email"],
-select,
-textarea {
-  font-family: var(--detail-text);
-  font-size: var(--font200);
-  font-weight: var(--body-text-400);
-  color: var(--text-color);
-  background-color: var(--bg-color);
-  border: 1px solid var(--form-gray);
-  width: 100%;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 5px 0;
-}
+	/* form input styling */
+	input[type='text'],
+	[type='email'],
+	select,
+	textarea {
+		font-family: var(--detail-text);
+		font-size: var(--font200);
+		font-weight: var(--body-text-400);
+		color: var(--text-color);
+		background-color: var(--bg-color);
+		border: 1px solid var(--form-gray);
+		width: 100%;
+		border-radius: 5px;
+		padding: 10px;
+		margin: 5px 0;
+	}
 
-/* to keep the 'select' dropdown text uniform with the rest of the form */
-option {
-  color: var(--form-select);
-}
-/* this keeps the select option 'ghosted' when unselected */
-.form-item-select {
-  /* // The select element is set to required as long as the selected options value is empty the element is not valid.*/
-  &:invalid {
-    color: var(--form-unselected);
-  }
+	/* to keep the 'select' dropdown text uniform with the rest of the form */
+	option {
+		color: var(--form-select);
+	}
+	/* this keeps the select option 'ghosted' when unselected */
+	.form-item-select {
+		/* // The select element is set to required as long as the selected options value is empty the element is not valid.*/
+		&:invalid {
+			color: var(--form-unselected);
+		}
+	}
 
-  }
+	/* FOOTER SECTION STYLES */
 
-/* FOOTER SECTION STYLES */
+	/* RESPONSIVE MEDIA QUERIES */
 
-/* RESPONSIVE MEDIA QUERIES */
+	/* Tablet */
 
-/* Tablet */
-
-
-@media screen and (max-width: 768px) {
-  }
-/* Phone */
-@media screen and (max-width: 480px) {
-    /* Global Wrapper (adjusting width variable) */
-    :root {
-        /* increasing wrapper width- to take up more screen */
-        --wrapper-width: 90%
-    }
-    /* Who We Are styles */
-    /* reduced the indent */
-    blockquote {
-        padding-left: var(--spacing-medium);
-        margin-bottom: var(--spacing-large);
-    }
-    /* reduced the size of the - before the blockquote */
-    .solid-line-indent::before{
-        width: 16px;
-    }
+	@media screen and (max-width: 768px) {
+	}
+	/* Phone */
+	@media screen and (max-width: 480px) {
+		/* Global Wrapper (adjusting width variable) */
+		:root {
+			/* increasing wrapper width- to take up more screen */
+			--wrapper-width: 90%;
+		}
+		/* Who We Are styles */
+		/* reduced the indent */
+		blockquote {
+			padding-left: var(--spacing-medium);
+			margin-bottom: var(--spacing-large);
+		}
+		/* reduced the size of the - before the blockquote */
+		.solid-line-indent::before {
+			width: 16px;
+		}
+	}
 }
