@@ -1,25 +1,19 @@
 /* BOX SIZING */
 
 html {
-<<<<<<< HEAD
 	box-sizing: border-box;
-=======
-  box-sizing: border-box;
->>>>>>> btm-gallery
 }
 
 *,
 *:before,
 *:after {
-<<<<<<< HEAD
 	box-sizing: inherit;
-=======
-  box-sizing: inherit;
->>>>>>> btm-gallery
 }
 
 /* VARIABLES */
 :root {
+    	--wrapper-width: 60%;
+
 	/* font families variables- linking fonts to the styles */
 	--main-headings: 'Josefin Sans', sans-serif;
 	--body-text: 'lato', sans-serif;
@@ -81,80 +75,6 @@ html {
 	--spacing-xl: 96px;
 	--spacing-xxl: 180px;
 	--spacing-xxxl: 352px;
-}
-
-/* variable for wrapper width */
-:root {
-<<<<<<< HEAD
-	--wrapper-width: 60%;
-=======
-  /* font families variables- linking fonts to the styles */
-  --main-headings: "Josefin Sans", sans-serif;
-  --body-text: "lato", sans-serif;
-  --detail-text: "lato", sans-serif;
-  --button-text: "Josefin Sans", sans-serif;
-  --main-headings-400: 400;
-  --main-headings-500: 500;
-  --main-headings-600: 600;
-  --main-headings-regular: 700;
-  --main-headings-800: 800;
-  --main-headings-900: 900;
-  --body-text-100: 100;
-  --body-text-200: 200;
-  --body-text-300: 300;
-  --body-text-400: 400;
-  --body-text-regular: 500;
-  --body-text-600: 600;
-  --detail-text-1: 14px;
-  --detail-text-2: 16px;
-  --button-text: 700;
-
-  /* colors */
-  --bg-color: #fafafa;
-  --secondary-color: #ffffff;
-  --text-color: #1a1a1a;
-  --form-select: #000;
-  --form-unselected: #808080;
-  --form-unselected: rgb(92, 92, 92);
-  --form-gray: #c5c5c5;
-  --amaranth: #d94252;
-  --teal: #007a80;
-  --dark-teal: #00585c;
-  --light-teal: #00c6d0;
-  --cybergrape: #6c4681;
-  --onyx: #424241;
-  --yaleblue: #00478f;
-  --hotpink: #fa6cb7;
-  --citrine: #d3c53f;
-  --citron: #92a32d;
-  --bcitron: #b37122;
-
-  /* font sizes */
-  --font50: 14px 0.875rem;
-  --font100: 16px 1rem;
-  --font200: 20px 1.25rem;
-  --font300: 24px 1.5rem;
-  --font400: 28px 1.75rem;
-  --font500: 32px 2rem;
-  --font600: 40px 2.5rem;
-  --font700: 48px 3rem;
-  --font800: 56px 3.5rem;
-  --font900: 64px 4rem;
-  --bold: bold;
-  --underline: underline;
-
-  /* variable for wrapper width */
-  --wrapper-width: 60%;
-
-  /* spacing variables */
-  --spacing-small: 16px;
-  --spacing-intermediate: 24px;
-  --spacing-medium: 32px;
-  --spacing-large: 64px;
-  --spacing-xl: 96px;
-  --spacing-xxl: 180px;
-  --spacing-xxxl: 352px;
->>>>>>> btm-gallery
 }
 
 /* GLOBAL STYLES (Desktop First for now) */
@@ -334,20 +254,9 @@ svg {
 }
 
 .wrapper {
-<<<<<<< HEAD
 	width: var(--wrapper-width);
 	max-width: 1440px;
 	margin: 0 auto;
-}
-
-ul li {
-	list-style-type: none;
-	padding: 7px;
-=======
-  width: var(--wrapper-width);
-  max-width: 1440px;
-  margin: 0 auto;
->>>>>>> btm-gallery
 }
 
 /* HEADER STYLES */
@@ -372,7 +281,6 @@ header .wrapper {
 	/*for space around*/
 }
 
-<<<<<<< HEAD
 .header-nav {
 	display: flex;
 	flex-direction: row;
@@ -442,8 +350,8 @@ blockquote {
 	left: 0;
 	width: 64px;
 	border-bottom: 3px solid var(--teal);
-=======
-.who-we-are h2,
+}
+    .who-we-are h2,
 .who-we-are .overlay {
   font-family: var(--main-headings);
   font-size: var(--font600);
@@ -487,14 +395,11 @@ blockquote {
   left: 0;
   width: 64px;
   border-bottom: 3px solid var(--teal);
->>>>>>> btm-gallery
 }
 
 /* WHAT WE DO STYLES */
 
 /* CONTACT FORM STYLES */
-
-<<<<<<< HEAD
 /* BUTTON STYLES */
 button {
 	background-color: var(--teal);
@@ -649,9 +554,7 @@ button:active {
 		.solid-line-indent::before {
 			width: 16px;
 		}
-	}
-=======
-/* FOOTER SECTION STYLES */
+
 
 /* LEFT AND RIGHT SCROLLING GALLERY IN THE FOOTER */
 .gallery-container {
@@ -739,5 +642,4 @@ button:active {
   .solid-line-indent::before {
     width: 16px;
   }
->>>>>>> btm-gallery
 }
