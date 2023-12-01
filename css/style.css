@@ -135,6 +135,42 @@ blockquote {
 /* WHAT WE DO STYLES */
 
 /* CONTACT FORM STYLES */
+
+/* BUTTON STYLES */
+button {
+    background-color: var(--teal);
+    color: var(--secondary-color);
+    font-family: var(--button-text);
+    font-size: var(--font100);
+    border: transparent solid 4px;
+    align-items: center;
+    font-weight: var(--bold);
+    transition-duration: 0.2s;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button:hover,
+button:focus {
+    background-color: var(--dark-teal);
+    color: var(--secondary-color);
+    align-items: center;
+    cursor: pointer;
+}
+
+button:focus {
+    outline-color: var(--dark-teal);
+    border-color: var(--dark-teal);
+    align-items: center;
+}
+
+button:active {
+    background-color: var(--teal);
+    outline-style: solid;
+    outline-color: var(--light-teal);
+    align-items: center;
+    border-color: transparent;
+
 /* the font appearance for the contact form section */
 .contact-form {
   color: var(--text-color);
@@ -219,13 +255,16 @@ option {
   &:invalid {
     color: var(--form-unselected);
   }
-}
+
+  }
 
 /* FOOTER SECTION STYLES */
 
 /* RESPONSIVE MEDIA QUERIES */
 
 /* Tablet */
+
+
 @media screen and (max-width: 768px) {
   }
 /* Phone */
