@@ -297,8 +297,55 @@
           <div class="logo">
             <img src="" alt="logo img" />
           </div>
-          <!-- land acknowledgement pop up button-->
-          <button class="pop-up-button">Land Acknowledgement</button>
+          <!-- This is the HTML for the Land Acknowledgement in the FOOTER and the content in the POPUP MODAL -->
+
+          <section class="modal hidden">
+            <div class="popup">
+              <div class="btn-close">
+                <button><img src="./assets/svg/close-btn.svg" alt="" /></button>
+              </div>
+              <div class="modal-content">
+                <h3>Land Acknowledgement</h3>
+                <p>
+                  ITLCT operates predominantly through digital means. The
+                  Atlanta, Georgia area is the official home for ITLCT. Our
+                  leaders are located in the United States between the states of
+                  Georgia and Florida and so we wish to acknowledge both
+                  locations. We acknowledge that ITLCT leaders reside on the
+                  traditional homelands and territories of Florida consisting of
+                  but not limited to the Seminole Nation and other first peoples
+                  such as the Calusa, Tobobaga, Timucua, Apalachee, Miccosukee,
+                  Mascogo, Taíno, amongst others. ITLCT also acknowledge that we
+                  operate, and our leaders also reside on the traditional
+                  homelands and territories of Georgia consisting of the
+                  Cherokee Nation and other first peoples such as but not
+                  limited to the Catawba, Muscogee (Creek), Chickasaw, Shawnee,
+                  Oconee, Apalachicola, Chatot, amongst others.
+                </p>
+                <p>
+                  The first peoples of Florida and Georgia who lived, worked,
+                  nurtured the land, and shared knowledge were involuntarily
+                  removed, faced difficult challenges and oppression, may still
+                  be seeking recognition and reconciliation in some cases, but
+                  today, they continue to shape their communities and the future
+                  in positive ways. ITLCT recognizes this and vows to be humble
+                  and respectful stewards of the lands, histories, and
+                  communities of Florida and Georgia's first people and other
+                  global tribes, nations, and communities as we engage in our
+                  work.
+                </p>
+                <div class="image-la">
+                  <img src="./assets/images/logo-main-1.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="overlay-la hidden"></div>
+          <button class="btn-la">Land Acknowledgement</button>
+
+          <!-- This is the ending of the HTML for the Land Acknowledgement in the FOOTER and the content in the POPUP MODAL  -->
+          <!-- THERE IS ASSOCIATED SCRIPT CONTENT in the modal.js -->
 
           <!-- footer social icons -->
           <ul class="social-icons">
@@ -322,5 +369,6 @@
         </div>
       </div>
     </footer>
+    <script src="./modal.js"></script>
   </body>
 </html>
