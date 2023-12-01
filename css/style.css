@@ -371,6 +371,9 @@ button:active {
 	align-items: center;
 	border-color: transparent;
 
+}
+	/* CONTACT FORM STYLES */
+
 	/* the font appearance for the contact form section */
 	.contact-form {
 		color: var(--text-color);
@@ -456,9 +459,6 @@ button:active {
 			color: var(--form-unselected);
 		}
 	}
-
-	/* CONTACT FORM STYLES */
-
 	/* background & sizing for form container */
 	.form-text-container {
 		width: 432px;
