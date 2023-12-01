@@ -114,6 +114,12 @@ h2 {
 	margin-top: 75px;
 }
 
+/* Theres was small space on the left of the ul so this is to get rid that */
+ul {
+	list-style: none;
+	padding: 0px;
+}
+
 /* whAT TERRY SENT */
 svg {
 	width: 48px;
@@ -125,6 +131,40 @@ svg {
 	width: var(--wrapper-width);
 	max-width: 1440px;
 	margin: 0 auto;
+}
+
+/* HEADER STYLES */
+header {
+	width: 100%;
+	background-image: url('../assets/images/hero-image.png');
+	background-position: center;
+	background-size: cover;
+}
+
+social-media-icons {
+	display: flex;
+	flex-direction: row;
+}
+/* Need to replace color with variables */
+.svg-icon {
+	fill: #424241;
+	transition: all 0.3s ease;
+}
+/* Need to replace color with variables */
+.svg-icon:hover,
+.svg-icon:focus {
+	fill: #007a80;
+}
+
+/* WHO WE ARE STYLES */
+/* hero background image styles complete */
+.hero-image {
+	width: 100%;
+	min-height: 300px;
+	background-image: url('../assets/images/global-ecosystem.png');
+	color: white;
+	display: flex;
+	align-items: flex-end;
 }
 
 /* Styling for "Website under Construction" */
@@ -541,11 +581,6 @@ option {
 
 /* CURRENTLY WORKING ON CARDS */
 
-/* Theres was small space on the left of the ul so this is to get rid that */
-ul {
-	padding: 0px;
-}
-
 /* This is the container for each li (card-item) within the ul */
 .card-item {
 	/* exact top/bottom margin needed */
@@ -644,9 +679,11 @@ ul {
 }
 /* END OF THE LEFT AND RIGHT SCROLLING GALLERY IN THE FOOTER */
 
-/* RESPONSIVE MEDIA QUERIES */
+/* Theres was small space on the left of the ul so this is to get rid that */
 
-/* Tablet */
+/* This is the container for each li (card-item) within the ul */
+
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {
 	/* What We Do Section */
