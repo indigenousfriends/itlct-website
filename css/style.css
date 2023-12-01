@@ -10,192 +10,33 @@ html {
 	box-sizing: inherit;
 }
 
+/* Setting the default px value for all fonts (has to be done before rems) */
+body {
+	font-size: 16px;
+}
+
 /* VARIABLES */
 :root {
-	--wrapper-width: 60%;
-
 	/* font families variables- linking fonts to the styles */
 	--main-headings: 'Josefin Sans', sans-serif;
 	--body-text: 'lato', sans-serif;
 	--detail-text: 'lato', sans-serif;
 	--button-text: 'Josefin Sans', sans-serif;
-	--main-headings-400: 400;
-	--main-headings-500: 500;
-	--main-headings-600: 600;
-	--main-headings-regular: 700;
-	--main-headings-800: 800;
-	--main-headings-900: 900;
-	--body-text-100: 100;
-	--body-text-200: 200;
-	--body-text-300: 300;
-	--body-text-400: 400;
-	--body-text-regular: 500;
-	--body-text-600: 600;
-	--detail-text-1: 14px;
-	--detail-text-2: 16px;
-	--button-text: 700;
-
-	/* colors */
-	--bg-color: #fafafa;
-	--secondary-color: #ffffff;
-	--text-color: #1a1a1a;
-	--form-gray: #c5c5c5;
-	--amaranth: #d94252;
-	--teal: #007a80;
-	--cybergrape: #6c4681;
-	--onyx: #424241;
-	--yaleblue: #00478f;
-	--hotpink: #fa6cb7;
-	--citrine: #d3c53f;
-	--citron: #92a32d;
-	--bcitron: #b37122;
-
-	/* font sizes */
-	--font50: 14px 0.875rem;
-	--font100: 16px 1rem;
-	--font200: 20px 1.25rem;
-	--font300: 24px 1.5rem;
-	--font400: 28px 1.75rem;
-	--font500: 32px 2rem;
-	--font600: 40px 2.5rem;
-	--font700: 48px 3rem;
-	--font800: 56px 3.5rem;
-	--font900: 64px 4rem;
-	--bold: bold;
-	--underline: underline;
-
-	/* variable for wrapper width */
-	--wrapper-width: 60%;
-
-	/* spacing variables */
-	--spacing-small: 16px;
-	--spacing-intermediate: 24px;
-	--spacing-medium: 32px;
-	--spacing-large: 64px;
-	--spacing-xl: 96px;
-	--spacing-xxl: 180px;
-	--spacing-xxxl: 352px;
-}
-
-/* GLOBAL STYLES (Desktop First for now) */
-
-/* HEADER STYLES */
-.title-section {
-	position: relative;
-	margin: 100px;
-	margin-right: 300px;
-	padding-left: 15px;
-	text-align: left;
-}
-
-h1 {
-	color: var(--Black, #1a1a1a);
-	font-family: 'Lato', sans-serif;
-	font-size: 24px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 32px;
-	position: absolute;
-}
-
-h2 {
-	color: var(--Teal, #007a80);
-	font-family: Josefin Sans;
-	font-size: 64px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 72px;
-	margin-top: 75px;
-}
-
-/* Styling for "Website under Construction" */
-
-.under-construction {
-	border-bottom: 4px solid #d94252;
-	background: linear-gradient(0deg, #ff7a88 0%, #ff7a88 100%), #fff;
-	width: auto;
-	height: 46px;
-	text-align: center;
-	position: relative;
-	padding: 5px;
-}
-
-.wuc-paragraph {
-	color: #1a1a1a;
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 15px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 32px;
-	margin: 10px;
-}
-
-.under-construction-button {
-	background: linear-gradient(0deg, #ff7a88 0%, #ff7a88 100%);
-	width: 24px;
-	height: 24px;
-	border: none;
-	position: absolute;
-	top: 30%;
-	right: 1%;
-	cursor: pointer;
-}
-
-/* Hero Section */
-
-/* whAT TERRY SENT */
-svg {
-	width: 48px;
-	height: 48px;
-	display: block;
-}
-
-/* Need to replace color with variables */
-.svg-icon {
-	fill: #424241;
-	transition: all 0.3s ease;
-}
-
-/* Need to replace color with variables */
-.svg-icon:hover,
-.svg-icon:focus {
-	fill: #007a80;
-}
-
-/* logo container */
-.logohead {
-	width: 250px;
-	height: 100px;
-	padding: 30px;
-	margin-left: 90px;
-}
-
-.footlogo {
-	width: 250px;
-	height: 100px;
-}
-
-:root {
-	/* font families variables- linking fonts to the styles */
-	--main-headings: 'Josefin Sans', sans-serif;
-	--body-text: 'lato', sans-serif;
-	--detail-text: 'lato', sans-serif;
-	--button-text: 'Josefin Sans', sans-serif;
-	--main-headings-400: 400;
-	--main-headings-500: 500;
-	--main-headings-600: 600;
-	--main-headings-regular: 700;
-	--main-headings-800: 800;
-	--main-headings-900: 900;
-	--body-text-100: 100;
-	--body-text-200: 200;
-	--body-text-300: 300;
-	--body-text-400: 400;
-	--body-text-regular: 500;
-	--body-text-600: 600;
-	--detail-text-1: 14px;
-	--detail-text-2: 16px;
-	--button-text: 700;
+	--main-headings-400: 4rem;
+	--main-headings-500: 5rem;
+	--main-headings-600: 6rem;
+	--main-headings-regular: 7rem;
+	--main-headings-800: 8rem;
+	--main-headings-900: 9rem;
+	--body-text-100: 1rem;
+	--body-text-200: 2rem;
+	--body-text-300: 3rem;
+	--body-text-400: 4rem;
+	--body-text-regular: 5rem;
+	--body-text-600: 6rem;
+	--detail-text-1: 0.875rem;
+	--detail-text-2: 1rem;
+	--button-text: 7rem;
 
 	/* colors */
 	--bg-color: #fafafa;
@@ -235,13 +76,13 @@ svg {
 	--wrapper-width: 60%;
 
 	/* spacing variables */
-	--spacing-small: 16px;
-	--spacing-intermediate: 24px;
-	--spacing-medium: 32px;
-	--spacing-large: 64px;
-	--spacing-xl: 96px;
-	--spacing-xxl: 180px;
-	--spacing-xxxl: 352px;
+	--spacing-small: 1rem;
+	--spacing-intermediate: 1.5rem;
+	--spacing-medium: 2rem;
+	--spacing-large: 4rem;
+	--spacing-xl: 6rem;
+	--spacing-xxl: 12rem;
+	--spacing-xxxl: 22rem;
 }
 
 /* GLOBAL STYLES (Desktop First for now) */
@@ -253,10 +94,106 @@ svg {
 	display: block;
 }
 
+h1 {
+	color: var(--Black, #1a1a1a);
+	font-family: 'Lato', sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 32px;
+	position: absolute;
+}
+
+h2 {
+	color: var(--Teal, #007a80);
+	font-family: Josefin Sans;
+	font-size: 64px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 72px;
+	margin-top: 75px;
+}
+
+/* whAT TERRY SENT */
+svg {
+	width: 48px;
+	height: 48px;
+	display: block;
+}
+
 .wrapper {
 	width: var(--wrapper-width);
 	max-width: 1440px;
 	margin: 0 auto;
+}
+
+/* Styling for "Website under Construction" */
+
+.under-construction {
+	border-bottom: 4px solid #d94252;
+	background: linear-gradient(0deg, #ff7a88 0%, #ff7a88 100%), #fff;
+	width: auto;
+	height: 46px;
+	text-align: center;
+	position: relative;
+	padding: 5px;
+}
+
+.wuc-paragraph {
+	color: #1a1a1a;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px;
+	margin: 10px;
+}
+
+.under-construction-button {
+	background: linear-gradient(0deg, #ff7a88 0%, #ff7a88 100%);
+	width: 24px;
+	height: 24px;
+	border: none;
+	position: absolute;
+	top: 30%;
+	right: 1%;
+	cursor: pointer;
+}
+
+/* HEADER STYLES */
+.title-section {
+	position: relative;
+	margin: 100px;
+	margin-right: 300px;
+	padding-left: 15px;
+	text-align: left;
+}
+
+/* Hero Section */
+
+/* Need to replace color with variables */
+.svg-icon {
+	fill: #424241;
+	transition: all 0.3s ease;
+}
+
+/* Need to replace color with variables */
+.svg-icon:hover,
+.svg-icon:focus {
+	fill: #007a80;
+}
+
+/* logo container */
+.logohead {
+	width: 250px;
+	height: 100px;
+	padding: 30px;
+	margin-left: 90px;
+}
+
+.footlogo {
+	width: 250px;
+	height: 100px;
 }
 
 /* HEADER STYLES */
@@ -399,7 +336,6 @@ blockquote {
 
 /* WHAT WE DO STYLES */
 
-/* CONTACT FORM STYLES */
 /* BUTTON STYLES */
 button {
 	background-color: var(--teal);
@@ -519,6 +455,39 @@ button:active {
 		&:invalid {
 			color: var(--form-unselected);
 		}
+	}
+
+	/* CONTACT FORM STYLES */
+
+	/* background & sizing for form container */
+	.form-text-container {
+		width: 432px;
+		min-height: 597px;
+		border-radius: 4px;
+		background: var(--bg-color);
+		padding: 20px;
+		background-image: url('../assets/images/contact-form.png');
+		background-position: center;
+		background-size: cover;
+	}
+	/* heading for form-text-container */
+	.form-text-container h2 {
+		color: var(--bg-color);
+		font-family: var(--font-family-headings);
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+	}
+	/* paragraphs styles for form text container */
+	.form-text-container p {
+		width: 384px;
+		color: var(--bg-color);
+		font-family: Lato, sans-serif;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
 	}
 
 	/* FOOTER SECTION STYLES */
