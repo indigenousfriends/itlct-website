@@ -6,6 +6,22 @@ html { box-sizing: border-box; }
 
 
 /* VARIABLES */
+svg {
+  width: 48px;
+  height: 48px;
+  display: block;
+}
+
+/* logo container */
+.logohead {
+  width: 250px;
+  height: 100px;
+}
+
+.footlogo {
+  width: 250px;
+  height: 100px;
+}
 
 :root {
     /* font families variables- linking fonts to the styles */
@@ -84,6 +100,27 @@ html { box-sizing: border-box; }
 }
 
 /* HEADER STYLES */
+header {
+  width: 100%;
+  background-image: url("../assets/images/hero-image.png");
+  background-position: center;
+  background-size: cover;
+}
+
+social-media-icons {
+  display: flex;
+  flex-direction: row;
+}
+/* Need to replace color with variables */
+.svg-icon {
+  fill: #424241;
+  transition: all 0.3s ease;
+}
+/* Need to replace color with variables */
+.svg-icon:hover,
+.svg-icon:focus {
+  fill: #007a80;
+}
 
 /* WHO WE ARE STYLES */
 
