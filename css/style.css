@@ -708,6 +708,20 @@ option {
 	.card-text p {
 		font-size: var(--font200);
 	}
+
+	/* CONTACT US SECTION */
+	.contact-form h2 {
+		font-size: var(--font500);
+	}
+	.form-container {
+		/* change from row to column */
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.input-container {
+
+	}
 }
 
 /* Phone */
