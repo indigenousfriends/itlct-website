@@ -713,15 +713,20 @@ option {
 	.contact-form h2 {
 		font-size: var(--font500);
 	}
+	
 	.form-container {
 		/* change from row to column */
 		flex-direction: column;
 		align-items: flex-start;
 	}
 
-	.input-container {
+	.name-input-container {
+		flex-direction: column;
+		align-items: flex-start;
 
 	}
+
+	
 }
 
 /* Phone */
