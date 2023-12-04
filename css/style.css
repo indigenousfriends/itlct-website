@@ -132,6 +132,9 @@ svg {
 	max-width: 1440px;
 	margin: 0 auto;
 }
+.textarea { 
+	resize: vertical;
+}
 
 /* HEADER STYLES */
 header {
@@ -447,6 +450,7 @@ form {
 	display: flex;
 	flex-direction: column;
 	row-gap: 10px;
+	width: 100%;
 }
 
 /* flexbox for form sections that can be filled out */
@@ -717,12 +721,15 @@ option {
 	.form-container {
 		/* change from row to column */
 		flex-direction: column;
-		align-items: flex-start;
 	}
-
+	.form-text-container {
+		width: 100%;
+	}
+	
+	}
 	.name-input-container {
 		flex-direction: column;
-		align-items: flex-start;
+	
 
 	}
 
