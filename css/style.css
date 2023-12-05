@@ -693,14 +693,9 @@ option {
 	}
 
 	/* CONTACT US SECTION */
+
+
 	/* font size changes */
-	.contact-us-header {
-		font-size: var(--font500);
-	}
-	/* font size changes */
-	.contact-form h2 {
-		font-size: var(--font500);
-	}
 	
 	.form-container {
 		/* change from row to column */
@@ -708,6 +703,10 @@ option {
 	}
 	.form-text-container {
 		width: 100%;
+	}
+
+	.form-text-container h2 {
+		font-size: var(--font500);
 	}
 	
 	.form-text-container p {
