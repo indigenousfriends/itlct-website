@@ -1,314 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>If These Lands Could Talk</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>If These Lands Could Talk</title>
-  <link rel="stylesheet" href="./css/normalize.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap"
-    rel="stylesheet" />
-</head>
-
-<body>
-  <!-- under construction banner -->
-  <div id="hbanner" class="under-construction">
-    <p class="wuc-paragraph">
-      Website under construction! We're currently building our website to
-      serve you better!
-    </p>
-    <button id="hbutton" class="under-construction-button">
-      <img class src="./assets/social-icons/material-symbols_close.svg" alt="close under-construction banner" />
-    </button>
-  </div>
-  <!-- header -->
-  <header>
-    <!-- wrapper -->
-    <div class="wrapper">
-      <!-- navigation -->
-      <nav class="header-nav">
-        <div class="logohead">
-          <href="#home" aria-label="Return to homepage">
-            <img src="./assets/images/logo-main-1.png" alt="logo img"></a>
-        </div>
-        <ul class="social-icons">
-          <!-- linkedIn -->
-          <li>
-            <a href="#">
-              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" class="svg-icon">
-                <path
-                  d="M18.5065 13.3333C18.5058 14.7478 17.9432 16.1041 16.9425 17.1038C15.9418 18.1035 14.585 18.6647 13.1705 18.664C11.756 18.6633 10.3997 18.1007 9.40006 17.1C8.40036 16.0993 7.83914 14.7425 7.83984 13.328C7.84055 11.9135 8.40313 10.5573 9.40383 9.55756C10.4045 8.55786 11.7614 7.99664 13.1758 7.99735C14.5903 7.99805 15.9466 8.56063 16.9463 9.56133C17.946 10.562 18.5072 11.9189 18.5065 13.3333ZM18.6665 22.6133H7.99984V56H18.6665V22.6133ZM35.5198 22.6133H24.9065V56H35.4132V38.48C35.4132 28.72 48.1332 27.8133 48.1332 38.48V56H58.6665V34.8533C58.6665 18.4 39.8398 19.0133 35.4132 27.0933L35.5198 22.6133Z" />
-              </svg>
-            </a>
-          </li>
-          <!-- facebook -->
-          <li>
-            <a href="#">
-              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" class="svg-icon">
-                <path
-                  d="M58.6668 32C58.6668 17.28 46.7202 5.33334 32.0002 5.33334C17.2802 5.33334 5.3335 17.28 5.3335 32C5.3335 44.9067 14.5068 55.6533 26.6668 58.1333V40H21.3335V32H26.6668V25.3333C26.6668 20.1867 30.8535 16 36.0002 16H42.6668V24H37.3335C35.8668 24 34.6668 25.2 34.6668 26.6667V32H42.6668V40H34.6668V58.5333C48.1335 57.2 58.6668 45.84 58.6668 32Z" />
-              </svg>
-            </a>
-          </li>
-          <!-- instagram -->
-          <li>
-            <a href="#">
-              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" class="svg-icon">
-                <path
-                  d="M20.8002 5.33334H43.2002C51.7335 5.33334 58.6668 12.2667 58.6668 20.8V43.2C58.6668 47.302 57.0373 51.236 54.1367 54.1366C51.2362 57.0372 47.3022 58.6667 43.2002 58.6667H20.8002C12.2668 58.6667 5.3335 51.7333 5.3335 43.2V20.8C5.3335 16.698 6.96302 12.764 9.86358 9.86343C12.7641 6.96286 16.6981 5.33334 20.8002 5.33334ZM20.2668 10.6667C17.7207 10.6667 15.279 11.6781 13.4786 13.4785C11.6783 15.2788 10.6668 17.7206 10.6668 20.2667V43.7333C10.6668 49.04 14.9602 53.3333 20.2668 53.3333H43.7335C46.2796 53.3333 48.7214 52.3219 50.5217 50.5216C52.3221 48.7212 53.3335 46.2794 53.3335 43.7333V20.2667C53.3335 14.96 49.0402 10.6667 43.7335 10.6667H20.2668ZM46.0002 14.6667C46.8842 14.6667 47.7321 15.0179 48.3572 15.643C48.9823 16.2681 49.3335 17.116 49.3335 18C49.3335 18.8841 48.9823 19.7319 48.3572 20.357C47.7321 20.9822 46.8842 21.3333 46.0002 21.3333C45.1161 21.3333 44.2683 20.9822 43.6431 20.357C43.018 19.7319 42.6668 18.8841 42.6668 18C42.6668 17.116 43.018 16.2681 43.6431 15.643C44.2683 15.0179 45.1161 14.6667 46.0002 14.6667ZM32.0002 18.6667C35.5364 18.6667 38.9278 20.0714 41.4282 22.5719C43.9287 25.0724 45.3335 28.4638 45.3335 32C45.3335 35.5362 43.9287 38.9276 41.4282 41.4281C38.9278 43.9286 35.5364 45.3333 32.0002 45.3333C28.4639 45.3333 25.0726 43.9286 22.5721 41.4281C20.0716 38.9276 18.6668 35.5362 18.6668 32C18.6668 28.4638 20.0716 25.0724 22.5721 22.5719C25.0726 20.0714 28.4639 18.6667 32.0002 18.6667ZM32.0002 24C29.8784 24 27.8436 24.8429 26.3433 26.3432C24.843 27.8434 24.0002 29.8783 24.0002 32C24.0002 34.1217 24.843 36.1566 26.3433 37.6569C27.8436 39.1572 29.8784 40 32.0002 40C34.1219 40 36.1567 39.1572 37.657 37.6569C39.1573 36.1566 40.0002 34.1217 40.0002 32C40.0002 29.8783 39.1573 27.8434 37.657 26.3432C36.1567 24.8429 34.1219 24 32.0002 24Z" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <!-- section with a p tag and h tag -->
-      <section class="title-section">
-        <h1>LEARN A BIT ABOUT US</h1>
-        <h2>Preserving Tomorrow by Building Today</h2>
-      </section>
+  <body>
+    <!-- under construction banner -->
+    <div id="hbanner" class="under-construction">
+      <p class="wuc-paragraph">
+        Website under construction! We're currently building our website to
+        serve you better!
+      </p>
+      <button id="hbutton" class="under-construction-button">
+        <img
+          class
+          src="./assets/social-icons/material-symbols_close.svg"
+          alt="close under-construction banner"
+        />
+      </button>
     </div>
-  </header>
-  <!-- main section -->
-  <main>
-    <!-- who we are section  -->
-    <section class="who-we-are">
-      <!-- who we are -->
-      <article>
-        <div class="wrapper">
-          <h2>Who are we?</h2>
-          <p>
-            If These Lands Could Talk (ITLCT) is global network of
-            change-makers, supporters, and allies who support native and
-            indigenous communities to thrive authentically and on their own
-            terms with digital technology both now and in the future.
-          </p>
-          <p>
-            We partner with communities and create aligned programming and
-            events that amplify the voices, experiences, and excellence of
-            native and indigenous populations throughout the world.
-          </p>
-          <blockquote>
-            We believe in an authentic, responsible, inclusive, and
-            sustainable digital future with positive social impact for native
-            and indigenous communities across the globe.
-          </blockquote>
-        </div>
-      </article>
-      <!-- global ecosystem -->
-      <article>
-        <!-- image goes here- as background img?? -->
-        <div class="ecosystem-banner">
-          <div class="wrapper">
-            <h2 class="overlay">A Global Ecosystem</h2>
-          </div>
-        </div>
-        <!-- area below the img -->
-        <div class="wrapper">
-          <p>
-            Supporting authentic representation of indigenous and native
-            communities throughout the world with digital technology and
-            community engagement, but on their own terms.
-          </p>
-          <p>
-            ITLCT supports the rights to self-determination and agency with
-            digital technology.
-          </p>
-          <hr />
-          <h2>What We Do</h2>
-          <!-- ul is a type of wrapper -->
-          <ul class="card-list">
-            <!-- digital influence -->
-            <li class="card-item">
-              <div class="card-logo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 124 124" fill="none" class="svg-one">
-                  <path d="M17.4375 66.1172H41.6562V90.3359H17.4375V66.1172ZM49.8906 33.6641H74.1094V57.8828H49.8906V33.6641Z"
-                    fill="black"
-                    fill-opacity="0.15" />
-                  <path d="M110.922 25.4297H45.5312C43.3879 25.4297 41.6562 27.1613 41.6562 29.3047V57.8828H13.0781C10.9348 57.8828 9.20312 59.6145 9.20312 61.7578V94.6953C9.20312 96.8387 10.9348 98.5703 13.0781 98.5703H78.4688C80.6121 98.5703 82.3438 96.8387 82.3438 94.6953V66.1172H110.922C113.065 66.1172 114.797 64.3855 114.797 62.2422V29.3047C114.797 27.1613 113.065 25.4297 110.922 25.4297ZM41.6562 90.3359H17.4375V66.1172H41.6562V90.3359ZM74.1094 90.3359H49.8906V66.1172H74.1094V90.3359ZM74.1094 57.8828H49.8906V33.6641H74.1094V57.8828ZM106.562 57.8828H82.3438V33.6641H106.562V57.8828Z" fill="#00478F" />
-                </svg>
-              </div>
-              <div class="card-text">
-                <h3>Build Digital Fluency</h3>
-                <p>
-                  We support the enhancement of digital literacy to fluency
-                  transition. We assist and partner with communities to engage
-                  with digital technologies through education, community
-                  building, and networking.
-                </p>
-              </div>
-            </li>
-            <!-- community engagement -->
-            <li class="card-item">
-              <div class="card-logo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 124 124" fill="none">
-                  <path d="M100.75 64.9553L61.9998 103.333L23.2498 64.9553C20.6938 62.4681 18.6806 59.4787 17.3368 56.1752C15.9929 52.8718 15.3477 49.3258 15.4416 45.7608C15.5355 42.1957 16.3665 38.6886 17.8824 35.4605C19.3983 32.2324 21.5661 29.3531 24.2494 27.0039C26.9328 24.6548 30.0734 22.8867 33.4736 21.8109C36.8738 20.7352 40.46 20.3751 44.0062 20.7534C47.5524 21.1317 50.9818 22.2401 54.0786 24.009C57.1754 25.7778 59.8724 28.1686 61.9998 31.0309C64.1364 28.1894 66.8365 25.8194 69.9311 24.0694C73.0258 22.3194 76.4483 21.2269 79.9846 20.8605C83.5208 20.494 87.0947 20.8614 90.4824 21.9396C93.8702 23.0179 96.9989 24.7838 99.6728 27.1268C102.347 29.4698 104.508 32.3396 106.022 35.5564C107.536 38.7732 108.369 42.2678 108.47 45.8216C108.571 49.3754 107.938 52.9117 106.609 56.2094C105.281 59.5071 103.286 62.495 100.75 64.9863" stroke="#D94252" stroke-width="10.3333" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M61.9997 31L44.9859 48.0138C44.0173 48.9827 43.4731 50.2967 43.4731 51.6667C43.4731 53.0367 44.0173 54.3506 44.9859 55.3195L47.7914 58.125C51.3564 61.69 57.143 61.69 60.708 58.125L65.8747 52.9583C68.9579 49.8752 73.1395 48.1431 77.4997 48.1431C81.8599 48.1431 86.0416 49.8752 89.1247 52.9583L100.75 64.5833M64.583 80.0833L74.9164 90.4167M77.4997 67.1667L87.833 77.5" stroke="#D94252" stroke-width="10.3333" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </div>
-              <div class="card-text">
-                <h3>Support community engagement</h3>
-                <p>
-                  We host community meetups in the metaverse and with digital
-                  technology. We partner with communities as they navigate
-                  questions around immersive and emerging technologies.
-                </p>
-              </div>
-            </li>
-            <!-- digital tech programs -->
-            <li class="card-item">
-              <div class="card-logo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 124 124" fill="none">
-                  <path d="M78.1587 73.625L68.1225 83.6613L73.625 89.125L89.125 73.625L73.625 58.125L68.1225 63.5887L78.1587 73.625ZM45.8412 73.625L55.8775 63.5887L50.375 58.125L34.875 73.625L50.375 89.125L55.8775 83.6613L45.8412 73.625Z" fill="#6C4681" />
-                  <path d="M34.875 34.875C37.0151 34.875 38.75 33.1401 38.75 31C38.75 28.8599 37.0151 27.125 34.875 27.125C32.7349 27.125 31 28.8599 31 31C31 33.1401 32.7349 34.875 34.875 34.875Z" fill="#6C4681" />
-                  <path d="M23.25 34.875C25.3901 34.875 27.125 33.1401 27.125 31C27.125 28.8599 25.3901 27.125 23.25 27.125C21.1099 27.125 19.375 28.8599 19.375 31C19.375 33.1401 21.1099 34.875 23.25 34.875Z" fill="#6C4681" />
-                  <path d="M108.5 15.5H15.5C11.2259 15.5 7.75 18.9759 7.75 23.25V100.75C7.75 105.024 11.2259 108.5 15.5 108.5H108.5C112.774 108.5 116.25 105.024 116.25 100.75V23.25C116.25 18.9759 112.774 15.5 108.5 15.5ZM108.5 23.25V38.75H15.5V23.25H108.5ZM15.5 100.75V46.5H108.5V100.75H15.5Z" fill="#6C4681" />
-                </svg>
-              </div>
-              <div class="card-text">
-                <h3>Curate digital technology programs</h3>
-                <p>
-                  We provide STEAM opportunities that are relevant to native and
-                  indigenous communities.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </article>
-    </section>
-
-    <!-- contact form section -->
-    <section class="contact-form">
+    <!-- header -->
+    <header>
       <!-- wrapper -->
       <div class="wrapper">
-        <h2>Contact Us!</h2>
-
-        <!-- form container -->
-        <div class="form-container">
-          <!-- text container -->
-          <div class="form-text-container">
-            <h2>We look forward to connecting!</h2>
-            <p>
-              We would love to hear from you! Please fill out the contact form
-              to get in touch. In your message, please let us know a little
-              about yourself and how we can assist you.
-            </p>
+        <!-- navigation -->
+        <nav class="header-nav">
+          <div class="logohead">
+            <a href="#home" aria-label="Return to homepage">
+              <img src="./assets/images/logo-main-1.png" alt="logo img" />
+            </a>
           </div>
-          <!-- contact form -->
-          <form class="contact-us-form" action="#" method="#" name="myForm">
-            <!-- This div is holding the first and last name sections of the form -->
-            <div class="name-input-container">
-              <!-- first name -->
-              <div class="input-container name-inputs">
-                <label for="first-name">First name</label>
-                <input
-                  type="text"
-                  id="first-name"
-                  name="first-name"
-                  required
-                  placeholder="First name" />
-              </div>
-              <!-- last name  -->
-              <div class="input-container name-inputs">
-                <label for="last-name">Last name</label>
-                <input
-                  type="text"
-                  id="last-name"
-                  name="last-name"
-                  required
-                  placeholder="Last name" />
-              </div>
-            </div>
-            <!-- email  -->
-            <div class="input-container">
-              <label for="email">Email</label>
-              <input
-                type="text"
-                id="email"
-                name="email"
-                required
-                placeholder="Email" />
-            </div>
-            <!-- drop down -->
-            <div class="input-container">
-              <label for="contact-dropdown">What can we help you with?</label>
-              <select
-                name="contact-dropdown"
-                id="contact-dropdown"
-                class="form-item-select"
-                required>
-                <option disabled value="" selected>Select</option>
-                <option value="general">General</option>
-                <option value="events-programming">
-                  Events & Programming
-                </option>
-                <option value="join">Join the Team</option>
-              </select>
-            </div>
-            <!-- description  -->
-            <div class="input-container">
-              <label for="description">Description</label>
-              <!-- text area -->
-              <textarea
-                name="description"
-                id="description"
-                required="true"
-                placeholder="Description"></textarea>
-            </div>
-            <!-- submit button -->
-            <div class="submit-button">
-              <button>Submit</button>
-            </div>
-          </form>
-        </div>
+          <ul class="social-icons">
+            <!-- linkedIn -->
+            <li>
+              <a href="#">
+                <svg
+                  viewBox="0 0 64 64"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="svg-icon"
+                >
+                  <path
+                    d="M18.5065 13.3333C18.5058 14.7478 17.9432 16.1041 16.9425 17.1038C15.9418 18.1035 14.585 18.6647 13.1705 18.664C11.756 18.6633 10.3997 18.1007 9.40006 17.1C8.40036 16.0993 7.83914 14.7425 7.83984 13.328C7.84055 11.9135 8.40313 10.5573 9.40383 9.55756C10.4045 8.55786 11.7614 7.99664 13.1758 7.99735C14.5903 7.99805 15.9466 8.56063 16.9463 9.56133C17.946 10.562 18.5072 11.9189 18.5065 13.3333ZM18.6665 22.6133H7.99984V56H18.6665V22.6133ZM35.5198 22.6133H24.9065V56H35.4132V38.48C35.4132 28.72 48.1332 27.8133 48.1332 38.48V56H58.6665V34.8533C58.6665 18.4 39.8398 19.0133 35.4132 27.0933L35.5198 22.6133Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <!-- facebook -->
+            <li>
+              <a href="#">
+                <svg
+                  viewBox="0 0 64 64"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="svg-icon"
+                >
+                  <path
+                    d="M58.6668 32C58.6668 17.28 46.7202 5.33334 32.0002 5.33334C17.2802 5.33334 5.3335 17.28 5.3335 32C5.3335 44.9067 14.5068 55.6533 26.6668 58.1333V40H21.3335V32H26.6668V25.3333C26.6668 20.1867 30.8535 16 36.0002 16H42.6668V24H37.3335C35.8668 24 34.6668 25.2 34.6668 26.6667V32H42.6668V40H34.6668V58.5333C48.1335 57.2 58.6668 45.84 58.6668 32Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <!-- instagram -->
+            <li>
+              <a href="#">
+                <svg
+                  viewBox="0 0 64 64"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="svg-icon"
+                >
+                  <path
+                    d="M20.8002 5.33334H43.2002C51.7335 5.33334 58.6668 12.2667 58.6668 20.8V43.2C58.6668 47.302 57.0373 51.236 54.1367 54.1366C51.2362 57.0372 47.3022 58.6667 43.2002 58.6667H20.8002C12.2668 58.6667 5.3335 51.7333 5.3335 43.2V20.8C5.3335 16.698 6.96302 12.764 9.86358 9.86343C12.7641 6.96286 16.6981 5.33334 20.8002 5.33334ZM20.2668 10.6667C17.7207 10.6667 15.279 11.6781 13.4786 13.4785C11.6783 15.2788 10.6668 17.7206 10.6668 20.2667V43.7333C10.6668 49.04 14.9602 53.3333 20.2668 53.3333H43.7335C46.2796 53.3333 48.7214 52.3219 50.5217 50.5216C52.3221 48.7212 53.3335 46.2794 53.3335 43.7333V20.2667C53.3335 14.96 49.0402 10.6667 43.7335 10.6667H20.2668ZM46.0002 14.6667C46.8842 14.6667 47.7321 15.0179 48.3572 15.643C48.9823 16.2681 49.3335 17.116 49.3335 18C49.3335 18.8841 48.9823 19.7319 48.3572 20.357C47.7321 20.9822 46.8842 21.3333 46.0002 21.3333C45.1161 21.3333 44.2683 20.9822 43.6431 20.357C43.018 19.7319 42.6668 18.8841 42.6668 18C42.6668 17.116 43.018 16.2681 43.6431 15.643C44.2683 15.0179 45.1161 14.6667 46.0002 14.6667ZM32.0002 18.6667C35.5364 18.6667 38.9278 20.0714 41.4282 22.5719C43.9287 25.0724 45.3335 28.4638 45.3335 32C45.3335 35.5362 43.9287 38.9276 41.4282 41.4281C38.9278 43.9286 35.5364 45.3333 32.0002 45.3333C28.4639 45.3333 25.0726 43.9286 22.5721 41.4281C20.0716 38.9276 18.6668 35.5362 18.6668 32C18.6668 28.4638 20.0716 25.0724 22.5721 22.5719C25.0726 20.0714 28.4639 18.6667 32.0002 18.6667ZM32.0002 24C29.8784 24 27.8436 24.8429 26.3433 26.3432C24.843 27.8434 24.0002 29.8783 24.0002 32C24.0002 34.1217 24.843 36.1566 26.3433 37.6569C27.8436 39.1572 29.8784 40 32.0002 40C34.1219 40 36.1567 39.1572 37.657 37.6569C39.1573 36.1566 40.0002 34.1217 40.0002 32C40.0002 29.8783 39.1573 27.8434 37.657 26.3432C36.1567 24.8429 34.1219 24 32.0002 24Z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- section with a p tag and h tag -->
+        <section class="title-section">
+          <h1>LEARN A BIT ABOUT US</h1>
+          <h2>Preserving Tomorrow by Building Today</h2>
+        </section>
       </div>
-    </section>
-  </main>
-  <!-- footer -->
-  <footer>
-    <!-- scrolling left and right photo gallery -->
-    <div class="gallery-container">
-      <div class="gallery-one">
-        <div class="group-one">
-          <img src="./assets/images/itlct-gallery-1.png">
-          <img src="./assets/images/itlct-gallery-2.png">
-          <img src="./assets/images/itlct-gallery-3.png">
-          <img src="./assets/images/itlct-gallery-4.png">
-        </div>
-      </div>
-      <div class="gallery-two">
-        <div class="group-two">
-          <img src="./assets/images/itlct-gallery-5.png">
-          <img src="./assets/images/itlct-gallery-6.png">
-          <img src="./assets/images/itlct-gallery-7.png">
-          <img src="./assets/images/itlct-gallery-8.png">
-        </div>
-      </div>
-    </div>
-    <!-- wrapper -->
-    <div class="wrapper">
-      <!-- hr -->
-      <hr />
-      <!-- nav  -->
-      <nav class="nav">
-        <div class="logo">
-          <img src="" alt="logo img" />
-        </div>
-        <!-- land acknowledgement pop up button-->
-        <button class="pop-up-button">Land Acknowledgement</button>
+    </header>
+    <!-- main section -->
+    <main>
+      <!-- who we are section  -->
+      <section class="who-we-are">
+        <!-- who we are -->
+        <article>
+          <div class="wrapper">
+            <h2>Who are we?</h2>
+            <p>
+              If These Lands Could Talk (ITLCT) is global network of
+              change-makers, supporters, and allies who support native and
+              indigenous communities to thrive authentically and on their own
+              terms with digital technology both now and in the future.
+            </p>
+            <p>
+              We partner with communities and create aligned programming and
+              events that amplify the voices, experiences, and excellence of
+              native and indigenous populations throughout the world.
+            </p>
+            <blockquote>
+              We believe in an authentic, responsible, inclusive, and
+              sustainable digital future with positive social impact for native
+              and indigenous communities across the globe.
+            </blockquote>
+          </div>
+        </article>
+        <!-- global ecosystem -->
+        <article>
+          <!-- image goes here- as background img?? -->
+          <div class="ecosystem-banner">
+            <div class="wrapper">
+              <h2 class="overlay">A Global Ecosystem</h2>
+            </div>
+          </div>
+          <!-- area below the img -->
+          <div class="wrapper">
+            <p>
+              Supporting authentic representation of indigenous and native
+              communities throughout the world with digital technology and
+              community engagement, but on their own terms.
+            </p>
+            <p>
+              ITLCT supports the rights to self-determination and agency with
+              digital technology.
+            </p>
+            <hr />
+            <h2>What We Do</h2>
+            <!-- ul is a type of wrapper -->
+            <ul class="card-list">
+              <!-- digital influence -->
+              <li class="card-item">
+                <div class="card-logo">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="124"
+                    height="124"
+                    viewBox="0 0 124 124"
+                    fill="none"
+                    class="svg-one"
+                  >
+                    <path
+                      d="M17.4375 66.1172H41.6562V90.3359H17.4375V66.1172ZM49.8906 33.6641H74.1094V57.8828H49.8906V33.6641Z"
+                      fill="black"
+                      fill-opacity="0.15"
+                    />
+                    <path
+                      d="M110.922 25.4297H45.5312C43.3879 25.4297 41.6562 27.1613 41.6562 29.3047V57.8828H13.0781C10.9348 57.8828 9.20312 59.6145 9.20312 61.7578V94.6953C9.20312 96.8387 10.9348 98.5703 13.0781 98.5703H78.4688C80.6121 98.5703 82.3438 96.8387 82.3438 94.6953V66.1172H110.922C113.065 66.1172 114.797 64.3855 114.797 62.2422V29.3047C114.797 27.1613 113.065 25.4297 110.922 25.4297ZM41.6562 90.3359H17.4375V66.1172H41.6562V90.3359ZM74.1094 90.3359H49.8906V66.1172H74.1094V90.3359ZM74.1094 57.8828H49.8906V33.6641H74.1094V57.8828ZM106.562 57.8828H82.3438V33.6641H106.562V57.8828Z"
+                      fill="#00478F"
+                    />
+                  </svg>
+                </div>
+                <div class="card-text">
+                  <h3>Build Digital Fluency</h3>
+                  <p>
+                    We support the enhancement of digital literacy to fluency
+                    transition. We assist and partner with communities to engage
+                    with digital technologies through education, community
+                    building, and networking.
+                  </p>
+                </div>
+              </li>
+              <!-- community engagement -->
+              <li class="card-item">
+                <div class="card-logo">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="124"
+                    height="124"
+                    viewBox="0 0 124 124"
+                    fill="none"
+                  >
+                    <path
+                      d="M100.75 64.9553L61.9998 103.333L23.2498 64.9553C20.6938 62.4681 18.6806 59.4787 17.3368 56.1752C15.9929 52.8718 15.3477 49.3258 15.4416 45.7608C15.5355 42.1957 16.3665 38.6886 17.8824 35.4605C19.3983 32.2324 21.5661 29.3531 24.2494 27.0039C26.9328 24.6548 30.0734 22.8867 33.4736 21.8109C36.8738 20.7352 40.46 20.3751 44.0062 20.7534C47.5524 21.1317 50.9818 22.2401 54.0786 24.009C57.1754 25.7778 59.8724 28.1686 61.9998 31.0309C64.1364 28.1894 66.8365 25.8194 69.9311 24.0694C73.0258 22.3194 76.4483 21.2269 79.9846 20.8605C83.5208 20.494 87.0947 20.8614 90.4824 21.9396C93.8702 23.0179 96.9989 24.7838 99.6728 27.1268C102.347 29.4698 104.508 32.3396 106.022 35.5564C107.536 38.7732 108.369 42.2678 108.47 45.8216C108.571 49.3754 107.938 52.9117 106.609 56.2094C105.281 59.5071 103.286 62.495 100.75 64.9863"
+                      stroke="#D94252"
+                      stroke-width="10.3333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M61.9997 31L44.9859 48.0138C44.0173 48.9827 43.4731 50.2967 43.4731 51.6667C43.4731 53.0367 44.0173 54.3506 44.9859 55.3195L47.7914 58.125C51.3564 61.69 57.143 61.69 60.708 58.125L65.8747 52.9583C68.9579 49.8752 73.1395 48.1431 77.4997 48.1431C81.8599 48.1431 86.0416 49.8752 89.1247 52.9583L100.75 64.5833M64.583 80.0833L74.9164 90.4167M77.4997 67.1667L87.833 77.5"
+                      stroke="#D94252"
+                      stroke-width="10.3333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="card-text">
+                  <h3>Support community engagement</h3>
+                  <p>
+                    We host community meetups in the metaverse and with digital
+                    technology. We partner with communities as they navigate
+                    questions around immersive and emerging technologies.
+                  </p>
+                </div>
+              </li>
+              <!-- digital tech programs -->
+              <li class="card-item">
+                <div class="card-logo">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="124"
+                    height="124"
+                    viewBox="0 0 124 124"
+                    fill="none"
+                  >
+                    <path
+                      d="M78.1587 73.625L68.1225 83.6613L73.625 89.125L89.125 73.625L73.625 58.125L68.1225 63.5887L78.1587 73.625ZM45.8412 73.625L55.8775 63.5887L50.375 58.125L34.875 73.625L50.375 89.125L55.8775 83.6613L45.8412 73.625Z"
+                      fill="#6C4681"
+                    />
+                    <path
+                      d="M34.875 34.875C37.0151 34.875 38.75 33.1401 38.75 31C38.75 28.8599 37.0151 27.125 34.875 27.125C32.7349 27.125 31 28.8599 31 31C31 33.1401 32.7349 34.875 34.875 34.875Z"
+                      fill="#6C4681"
+                    />
+                    <path
+                      d="M23.25 34.875C25.3901 34.875 27.125 33.1401 27.125 31C27.125 28.8599 25.3901 27.125 23.25 27.125C21.1099 27.125 19.375 28.8599 19.375 31C19.375 33.1401 21.1099 34.875 23.25 34.875Z"
+                      fill="#6C4681"
+                    />
+                    <path
+                      d="M108.5 15.5H15.5C11.2259 15.5 7.75 18.9759 7.75 23.25V100.75C7.75 105.024 11.2259 108.5 15.5 108.5H108.5C112.774 108.5 116.25 105.024 116.25 100.75V23.25C116.25 18.9759 112.774 15.5 108.5 15.5ZM108.5 23.25V38.75H15.5V23.25H108.5ZM15.5 100.75V46.5H108.5V100.75H15.5Z"
+                      fill="#6C4681"
+                    />
+                  </svg>
+                </div>
+                <div class="card-text">
+                  <h3>Curate digital technology programs</h3>
+                  <p>
+                    We provide STEAM opportunities that are relevant to native
+                    and indigenous communities.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
       <!-- contact form section -->
       <section class="contact-form">
         <!-- wrapper -->
         <div class="wrapper">
+          <h2>Contact Us!</h2>
+
           <!-- form container -->
           <div class="form-container">
             <!-- text container -->
             <div class="form-text-container">
-              <h2>Contact Us!</h2>
               <h2>We look forward to connecting!</h2>
               <p>
                 We would love to hear from you! Please fill out the contact form
@@ -391,46 +341,27 @@
         </div>
       </section>
     </main>
-
     <!-- footer -->
     <footer>
       <!-- scrolling left and right photo gallery -->
-      <section class="gallery-section">
-        <ul class="gallery-one">
-          <li>
-            <img src="" alt="" />
-          </li>
-          <li>
-            <img src="" alt="" />
-          </li>
-          <li>
-            <img src="" alt="" />
-          </li>
-          <li>
-            <img src="" alt="" />
-          </li>
-          <li>
-            <img src="" alt="" />
-          </li>
-        </ul>
-        <ul class="gallery-two">
-          <li>
-            <img src="" alt="" />
-          </li>
-          <li>
-            <img src="" alt="" />
-          </li>
-          <li>
-            <img src="" alt="" />
-          </li>
-          <li>
-            <img src="" alt="" />
-          </li>
-          <li>
-            <img src="" alt="" />
-          </li>
-        </ul>
-      </section>
+      <div class="gallery-container">
+        <div class="gallery-one">
+          <div class="group-one">
+            <img src="./assets/images/itlct-gallery-1.png" />
+            <img src="./assets/images/itlct-gallery-2.png" />
+            <img src="./assets/images/itlct-gallery-3.png" />
+            <img src="./assets/images/itlct-gallery-4.png" />
+          </div>
+        </div>
+        <div class="gallery-two">
+          <div class="group-two">
+            <img src="./assets/images/itlct-gallery-5.png" />
+            <img src="./assets/images/itlct-gallery-6.png" />
+            <img src="./assets/images/itlct-gallery-7.png" />
+            <img src="./assets/images/itlct-gallery-8.png" />
+          </div>
+        </div>
+      </div>
       <!-- wrapper -->
       <div class="wrapper">
         <!-- hr -->
@@ -440,8 +371,7 @@
           <div class="logo">
             <img src="" alt="logo img" />
           </div>
-          <!-- This is the HTML for the Land Acknowledgement in the FOOTER and the content in the POPUP MODAL -->
-
+          <!-- LAND ACKNOWLEDGEMENTS -->
           <section class="modal hidden">
             <div class="popup">
               <div class="btn-close">
@@ -490,55 +420,60 @@
           <!-- This is the ending of the HTML for the Land Acknowledgement in the FOOTER and the content in the POPUP MODAL  -->
           <!-- THERE IS ASSOCIATED SCRIPT CONTENT in the modal.js -->
 
-        <!-- footer social icons -->
-        <ul class="social-icons">
-          <!-- linkedIn -->
-          <li>
-            <a href="#">
-              <svg
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-                class="svg-icon">
-                <path
-                  d="M18.5065 13.3333C18.5058 14.7478 17.9432 16.1041 16.9425 17.1038C15.9418 18.1035 14.585 18.6647 13.1705 18.664C11.756 18.6633 10.3997 18.1007 9.40006 17.1C8.40036 16.0993 7.83914 14.7425 7.83984 13.328C7.84055 11.9135 8.40313 10.5573 9.40383 9.55756C10.4045 8.55786 11.7614 7.99664 13.1758 7.99735C14.5903 7.99805 15.9466 8.56063 16.9463 9.56133C17.946 10.562 18.5072 11.9189 18.5065 13.3333ZM18.6665 22.6133H7.99984V56H18.6665V22.6133ZM35.5198 22.6133H24.9065V56H35.4132V38.48C35.4132 28.72 48.1332 27.8133 48.1332 38.48V56H58.6665V34.8533C58.6665 18.4 39.8398 19.0133 35.4132 27.0933L35.5198 22.6133Z" />
-              </svg>
-            </a>
-          </li>
-          <!-- facebook -->
-          <li>
-            <a href="#">
-              <svg
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-                class="svg-icon">
-                <path
-                  d="M58.6668 32C58.6668 17.28 46.7202 5.33334 32.0002 5.33334C17.2802 5.33334 5.3335 17.28 5.3335 32C5.3335 44.9067 14.5068 55.6533 26.6668 58.1333V40H21.3335V32H26.6668V25.3333C26.6668 20.1867 30.8535 16 36.0002 16H42.6668V24H37.3335C35.8668 24 34.6668 25.2 34.6668 26.6667V32H42.6668V40H34.6668V58.5333C48.1335 57.2 58.6668 45.84 58.6668 32Z" />
-              </svg>
-            </a>
-          </li>
-          <!-- instagram -->
-          <li>
-            <a href="#">
-              <svg
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-                class="svg-icon">
-                <path
-                  d="M20.8002 5.33334H43.2002C51.7335 5.33334 58.6668 12.2667 58.6668 20.8V43.2C58.6668 47.302 57.0373 51.236 54.1367 54.1366C51.2362 57.0372 47.3022 58.6667 43.2002 58.6667H20.8002C12.2668 58.6667 5.3335 51.7333 5.3335 43.2V20.8C5.3335 16.698 6.96302 12.764 9.86358 9.86343C12.7641 6.96286 16.6981 5.33334 20.8002 5.33334ZM20.2668 10.6667C17.7207 10.6667 15.279 11.6781 13.4786 13.4785C11.6783 15.2788 10.6668 17.7206 10.6668 20.2667V43.7333C10.6668 49.04 14.9602 53.3333 20.2668 53.3333H43.7335C46.2796 53.3333 48.7214 52.3219 50.5217 50.5216C52.3221 48.7212 53.3335 46.2794 53.3335 43.7333V20.2667C53.3335 14.96 49.0402 10.6667 43.7335 10.6667H20.2668ZM46.0002 14.6667C46.8842 14.6667 47.7321 15.0179 48.3572 15.643C48.9823 16.2681 49.3335 17.116 49.3335 18C49.3335 18.8841 48.9823 19.7319 48.3572 20.357C47.7321 20.9822 46.8842 21.3333 46.0002 21.3333C45.1161 21.3333 44.2683 20.9822 43.6431 20.357C43.018 19.7319 42.6668 18.8841 42.6668 18C42.6668 17.116 43.018 16.2681 43.6431 15.643C44.2683 15.0179 45.1161 14.6667 46.0002 14.6667ZM32.0002 18.6667C35.5364 18.6667 38.9278 20.0714 41.4282 22.5719C43.9287 25.0724 45.3335 28.4638 45.3335 32C45.3335 35.5362 43.9287 38.9276 41.4282 41.4281C38.9278 43.9286 35.5364 45.3333 32.0002 45.3333C28.4639 45.3333 25.0726 43.9286 22.5721 41.4281C20.0716 38.9276 18.6668 35.5362 18.6668 32C18.6668 28.4638 20.0716 25.0724 22.5721 22.5719C25.0726 20.0714 28.4639 18.6667 32.0002 18.6667ZM32.0002 24C29.8784 24 27.8436 24.8429 26.3433 26.3432C24.843 27.8434 24.0002 29.8783 24.0002 32C24.0002 34.1217 24.843 36.1566 26.3433 37.6569C27.8436 39.1572 29.8784 40 32.0002 40C34.1219 40 36.1567 39.1572 37.657 37.6569C39.1573 36.1566 40.0002 34.1217 40.0002 32C40.0002 29.8783 39.1573 27.8434 37.657 26.3432C36.1567 24.8429 34.1219 24 32.0002 24Z" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <!-- copyright info -->
-      <div class="copyright">
-        <p>
-          Copyright c if these Lands Could Talk (ITLCT). All Rights Reserved.
-          ITLCT is a Georgia Non-Profit Corporation.
-        </p>
+          <!-- footer social icons -->
+          <ul class="social-icons">
+            <!-- linkedIn -->
+            <li>
+              <a href="#">
+                <svg
+                  viewBox="0 0 64 64"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="svg-icon"
+                >
+                  <path
+                    d="M18.5065 13.3333C18.5058 14.7478 17.9432 16.1041 16.9425 17.1038C15.9418 18.1035 14.585 18.6647 13.1705 18.664C11.756 18.6633 10.3997 18.1007 9.40006 17.1C8.40036 16.0993 7.83914 14.7425 7.83984 13.328C7.84055 11.9135 8.40313 10.5573 9.40383 9.55756C10.4045 8.55786 11.7614 7.99664 13.1758 7.99735C14.5903 7.99805 15.9466 8.56063 16.9463 9.56133C17.946 10.562 18.5072 11.9189 18.5065 13.3333ZM18.6665 22.6133H7.99984V56H18.6665V22.6133ZM35.5198 22.6133H24.9065V56H35.4132V38.48C35.4132 28.72 48.1332 27.8133 48.1332 38.48V56H58.6665V34.8533C58.6665 18.4 39.8398 19.0133 35.4132 27.0933L35.5198 22.6133Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <!-- facebook -->
+            <li>
+              <a href="#">
+                <svg
+                  viewBox="0 0 64 64"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="svg-icon"
+                >
+                  <path
+                    d="M58.6668 32C58.6668 17.28 46.7202 5.33334 32.0002 5.33334C17.2802 5.33334 5.3335 17.28 5.3335 32C5.3335 44.9067 14.5068 55.6533 26.6668 58.1333V40H21.3335V32H26.6668V25.3333C26.6668 20.1867 30.8535 16 36.0002 16H42.6668V24H37.3335C35.8668 24 34.6668 25.2 34.6668 26.6667V32H42.6668V40H34.6668V58.5333C48.1335 57.2 58.6668 45.84 58.6668 32Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <!-- instagram -->
+            <li>
+              <a href="#">
+                <svg
+                  viewBox="0 0 64 64"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="svg-icon"
+                >
+                  <path
+                    d="M20.8002 5.33334H43.2002C51.7335 5.33334 58.6668 12.2667 58.6668 20.8V43.2C58.6668 47.302 57.0373 51.236 54.1367 54.1366C51.2362 57.0372 47.3022 58.6667 43.2002 58.6667H20.8002C12.2668 58.6667 5.3335 51.7333 5.3335 43.2V20.8C5.3335 16.698 6.96302 12.764 9.86358 9.86343C12.7641 6.96286 16.6981 5.33334 20.8002 5.33334ZM20.2668 10.6667C17.7207 10.6667 15.279 11.6781 13.4786 13.4785C11.6783 15.2788 10.6668 17.7206 10.6668 20.2667V43.7333C10.6668 49.04 14.9602 53.3333 20.2668 53.3333H43.7335C46.2796 53.3333 48.7214 52.3219 50.5217 50.5216C52.3221 48.7212 53.3335 46.2794 53.3335 43.7333V20.2667C53.3335 14.96 49.0402 10.6667 43.7335 10.6667H20.2668ZM46.0002 14.6667C46.8842 14.6667 47.7321 15.0179 48.3572 15.643C48.9823 16.2681 49.3335 17.116 49.3335 18C49.3335 18.8841 48.9823 19.7319 48.3572 20.357C47.7321 20.9822 46.8842 21.3333 46.0002 21.3333C45.1161 21.3333 44.2683 20.9822 43.6431 20.357C43.018 19.7319 42.6668 18.8841 42.6668 18C42.6668 17.116 43.018 16.2681 43.6431 15.643C44.2683 15.0179 45.1161 14.6667 46.0002 14.6667ZM32.0002 18.6667C35.5364 18.6667 38.9278 20.0714 41.4282 22.5719C43.9287 25.0724 45.3335 28.4638 45.3335 32C45.3335 35.5362 43.9287 38.9276 41.4282 41.4281C38.9278 43.9286 35.5364 45.3333 32.0002 45.3333C28.4639 45.3333 25.0726 43.9286 22.5721 41.4281C20.0716 38.9276 18.6668 35.5362 18.6668 32C18.6668 28.4638 20.0716 25.0724 22.5721 22.5719C25.0726 20.0714 28.4639 18.6667 32.0002 18.6667ZM32.0002 24C29.8784 24 27.8436 24.8429 26.3433 26.3432C24.843 27.8434 24.0002 29.8783 24.0002 32C24.0002 34.1217 24.843 36.1566 26.3433 37.6569C27.8436 39.1572 29.8784 40 32.0002 40C34.1219 40 36.1567 39.1572 37.657 37.6569C39.1573 36.1566 40.0002 34.1217 40.0002 32C40.0002 29.8783 39.1573 27.8434 37.657 26.3432C36.1567 24.8429 34.1219 24 32.0002 24Z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- copyright info -->
+        <div class="copyright">
+          <p>
+            Copyright c if these Lands Could Talk (ITLCT). All Rights Reserved.
+            ITLCT is a Georgia Non-Profit Corporation.
+          </p>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
