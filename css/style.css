@@ -422,6 +422,7 @@ button:active {
 	font-family: var(--main-headings);
 	font-size: var(--font600);
 	font-weight: var(--main-headings-regular);
+	margin: 20px auto;
 }
 
 /* container styling for form-text container and input-container */
