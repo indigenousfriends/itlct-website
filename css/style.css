@@ -72,7 +72,7 @@ body {
   --underline: underline;
 
   /* variable for wrapper width */
-  --wrapper-width: 60%;
+  --wrapper-width: 85%;
 
   /* spacing variables */
   --spacing-small: 1rem;
@@ -171,7 +171,7 @@ social-media-icons {
 .under-construction {
   border-bottom: 4px solid #d94252;
   background: linear-gradient(0deg, #ff7a88 0%, #ff7a88 100%), #fff;
-  width: auto;
+  width: 100%;
   height: 46px;
   text-align: center;
   position: relative;
@@ -264,6 +264,8 @@ header .wrapper {
 .logo {
   display: flex;
   align-self: center;
+  width: 252px;
+  height: 100 px;
 
   /* to center the logo vertically */
 }
@@ -300,7 +302,7 @@ header .wrapper {
 .ecosystem-banner {
   background-image: url(../assets/images/global-ecosystem.png);
   width: 100%;
-  height: 105px;
+  min-height: 300px;
 }
 
 blockquote {
@@ -693,6 +695,10 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 32px;
+  width: 100%;
+}
+.image-la img {
+  width: auto;
 }
 .overlay-la {
   position: fixed;
