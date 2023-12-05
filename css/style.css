@@ -431,7 +431,6 @@ button:active {
 	font-family: var(--main-headings);
 	font-weight: var(--main-headings-400);
 	font-size: var(--font300);
-	padding: 20px;
 	display: flex;
 	flex-direction: row;
 	gap: 20px;
@@ -726,6 +725,11 @@ option {
 		width: 100%;
 	}
 	
+	.form-text-container p {
+		width: 100%;
+		font-size: var(--font200);
+	}
+
 	}
 	.name-input-container {
 		flex-direction: column;
