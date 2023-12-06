@@ -734,6 +734,18 @@ body {
 		font-size: var(--font200);
 	}
 
+	.header {
+		background-image: url(../assets/mobile/hero-image.png);
+	}
+
+	.ecosystem-banner {
+		background-image: url(../assets/mobile/global-ecosystem.png);
+	}
+
+	.form-text-container {
+		background-image: url(../assets/mobile/contact-form.png);
+	}
+
 	/* CONTACT US SECTION */
 
 
@@ -763,7 +775,6 @@ body {
 	
 
 	}
-
 	
 }
 
