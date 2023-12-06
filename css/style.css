@@ -93,7 +93,7 @@ svg {
   display: block;
 }
 
-h1 {
+.learn-about-us {
   color: var(--Black, #1a1a1a);
   font-family: "Lato", sans-serif;
   font-size: 24px;
@@ -101,6 +101,7 @@ h1 {
   font-weight: 500;
   line-height: 32px;
   position: absolute;
+  margin: 19px 0;
 }
 
 h2 {
@@ -125,12 +126,26 @@ svg {
   height: 48px;
   display: block;
 }
-
+/* global wrapper class */
 .wrapper {
   width: var(--wrapper-width);
   max-width: 1440px;
   margin: 0 auto;
 }
+/* custom sr-only class */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .textarea {
   resize: vertical;
 }
@@ -205,9 +220,7 @@ social-media-icons {
 /* HEADER STYLES */
 .title-section {
   position: relative;
-  margin: 100px;
-  margin-right: 300px;
-  padding-left: 15px;
+  margin: 100px 0;
   text-align: left;
 }
 
@@ -234,8 +247,7 @@ social-media-icons {
 .logohead {
   width: 312px;
   height: 124px;
-  padding: 30px;
-  margin-left: 90px;
+  margin-top: var(--spacing-medium);
 }
 
 .footlogo {
@@ -274,7 +286,6 @@ header .wrapper {
   align-self: center;
   width: 252px;
   height: 100 px;
-
   /* to center the logo vertically */
 }
 
@@ -289,17 +300,16 @@ header .wrapper {
 }
 
 /* WHO WE ARE */
-
 .who-we-are h2,
-.who-we-are .overlay {
+.who-we-are .overlay-who {
   font-family: var(--main-headings);
   font-size: var(--font600);
   font-weight: var(--main-headings-regular);
   color: var(--text-color);
 }
-.who-we-are .overlay {
+.who-we-are .overlay-who {
   color: var(--secondary-color);
-  padding-top: 75px;
+  padding-top: 220px;
 }
 .who-we-are p {
   font-family: var(--body-text);
@@ -308,7 +318,9 @@ header .wrapper {
   color: var(--text-color);
 }
 .ecosystem-banner {
-  background-image: url(../assets/images/global-ecosystem.png);
+  background-image: url("../assets/images/global-ecosystem.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   min-height: 300px;
 }
@@ -618,15 +630,6 @@ option {
   font-weight: var(--main-headings-regular);
 }
 /* MODAL STYLES LA */
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #222;
-  position: relative;
-  min-height: 100vh;
-}
 
 .modal {
   gap: 0.4rem;
