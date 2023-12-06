@@ -127,6 +127,11 @@ hr {
   max-width: 1440px;
   margin: 0 auto;
 }
+
+/* global hidden class */
+.hidden {
+  display: none;
+}
 /* custom sr-only class */
 .sr-only {
   position: absolute;
@@ -623,9 +628,10 @@ option {
 
 /* FOOTER SECTION STYLES */
 /* footer flex layout */
-.footer-nav {
+footer nav {
   display: flex;
   justify-content: space-between; /*for space between */
+  align-items: center;
 }
 /* social icons flex layout */
 .social-icons {
@@ -657,13 +663,18 @@ option {
   border-radius: 4px;
   z-index: 2;
 }
+
 .btn-la {
   display: inline-block;
   font-weight: 700;
-  font-size: 1em;
+  font-size: var(--font300);
+  color: black;
+  height: fit-content;
 }
-.btn-la:hover {
-  color: red;
+.btn-la:hover,
+.btn-la:focus {
+  background-color: transparent;
+  color: var(--amaranth);
 }
 .btn-la,
 .btn-close button {
@@ -677,7 +688,7 @@ option {
 .modal-content h3 {
   display: flex;
   justify-content: center;
-  color: #d94252;
+  color: var(--amaranth);
   font-family: Josefin Sans;
   font-size: 36px;
   font-weight: 700;
@@ -716,9 +727,14 @@ option {
   backdrop-filter: blur(3px);
   z-index: 1;
 }
-.hidden {
-  display: none;
+
+/* copyright section */
+.copyright p {
+  font-family: var(--detail-text);
+  font-size: var(--font50);
+  margin-bottom: var(--spacing-large);
 }
+
 /* end of land popup */
 
 /* Theres was small space on the left of the ul so this is to get rid that */
