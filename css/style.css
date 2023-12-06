@@ -307,7 +307,7 @@ header .wrapper {
   font-family: var(--main-headings);
   font-size: var(--font600);
   font-weight: var(--main-headings-regular);
-  color: var(--text-color);
+  color: var(--secondary-color);
 }
 .who-we-are .overlay-who {
   color: var(--secondary-color);
