@@ -1,5 +1,4 @@
 /* BOX SIZING */
-
 html {
 	box-sizing: border-box;
 }
@@ -73,7 +72,7 @@ body {
 	--underline: underline;
 
 	/* variable for wrapper width */
-	--wrapper-width: 60%;
+	--wrapper-width: 85%;
 
 	/* spacing variables */
 	--spacing-small: 1rem;
@@ -132,6 +131,9 @@ svg {
 	max-width: 1440px;
 	margin: 0 auto;
 }
+.textarea { 
+	resize: vertical;
+}
 
 /* HEADER STYLES */
 header {
@@ -172,7 +174,7 @@ social-media-icons {
 .under-construction {
 	border-bottom: 4px solid #d94252;
 	background: linear-gradient(0deg, #ff7a88 0%, #ff7a88 100%), #fff;
-	width: auto;
+	width: 100%;
 	height: 46px;
 	text-align: center;
 	position: relative;
@@ -236,7 +238,6 @@ social-media-icons {
 	height: 100px;
 }
 
-/* HEADER STYLES */
 header {
 	width: 100%;
 	background-image: url('../assets/images/hero-image.png');
@@ -249,7 +250,6 @@ header {
 	flex-direction: row;
 }
 
-/* MIRANDAS CODE */
 /* header flex layout */
 header .wrapper {
 	display: flex;
@@ -267,6 +267,8 @@ header .wrapper {
 .logo {
 	display: flex;
 	align-self: center;
+	width: 252px;
+	height: 100 px;
 
 	/* to center the logo vertically */
 }
@@ -303,52 +305,7 @@ header .wrapper {
 .ecosystem-banner {
 	background-image: url(../assets/images/global-ecosystem.png);
 	width: 100%;
-	height: 105px;
-}
-
-blockquote {
-	font-family: var(--main-headings);
-	font-size: var(--font300);
-	font-weight: var(--main-headings-600);
-	color: var(--teal);
-	font-style: italic;
-	padding-left: var(--spacing-xl);
-	margin-left: 0;
-	margin-right: 0;
-	line-height: 1.5rem;
-}
-.solid-line-indent {
-	position: relative;
-}
-.solid-line-indent::before {
-	content: '';
-	position: absolute;
-	top: 10%;
-	left: 0;
-	width: 64px;
-	border-bottom: 3px solid var(--teal);
-}
-.who-we-are h2,
-.who-we-are .overlay {
-	font-family: var(--main-headings);
-	font-size: var(--font600);
-	font-weight: var(--main-headings-regular);
-	color: var(--text-color);
-}
-.who-we-are .overlay {
-	color: var(--secondary-color);
-	padding-top: 75px;
-}
-.who-we-are p {
-	font-family: var(--body-text);
-	font-size: var(--font300);
-	font-weight: var(--body-text-regular);
-	color: var(--text-color);
-}
-.ecosystem-banner {
-	background-image: url(../assets/images/global-ecosystem.png);
-	width: 100%;
-	height: 105px;
+	min-height: 300px;
 }
 
 blockquote {
@@ -411,6 +368,40 @@ button:active {
 	align-items: center;
 	border-color: transparent;
 }
+/* WHAT WE DO */
+
+/* This is the container for each li (card-item) within the ul */
+.card-item {
+	/* exact top/bottom margin needed */
+	margin: 20px auto;
+	width: 100%;
+	padding: var(--spacing-intermediate);
+
+	/* placed in flexbox to put img and text side by side */
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-medium);
+
+	background-color: var(--secondary-color);
+	border: 1px solid #dbdbdb;
+	border-radius: 8px;
+}
+
+/* Card-text Typography*/
+.card-text h3 {
+	color: var(--text-color);
+	font-family: var(--main-headings);
+	font-size: var(--font500);
+	font-weight: var(--main-headings-regular);
+}
+
+.card-text p {
+	color: var(--text-color);
+	font-family: var(--body-text);
+	font-size: var(--font300);
+	font-weight: var(--body-text-regular);
+}
+
 /* CONTACT FORM STYLES */
 
 /* the font appearance for the contact form section */
@@ -419,6 +410,7 @@ button:active {
 	font-family: var(--main-headings);
 	font-size: var(--font600);
 	font-weight: var(--main-headings-regular);
+	margin: 20px auto;
 }
 
 /* container styling for form-text container and input-container */
@@ -428,7 +420,6 @@ button:active {
 	font-family: var(--main-headings);
 	font-weight: var(--main-headings-400);
 	font-size: var(--font300);
-	padding: 20px;
 	display: flex;
 	flex-direction: row;
 	gap: 20px;
@@ -447,6 +438,7 @@ form {
 	display: flex;
 	flex-direction: column;
 	row-gap: 10px;
+	width: 100%;
 }
 
 /* flexbox for form sections that can be filled out */
@@ -498,122 +490,47 @@ option {
 		color: var(--form-unselected);
 	}
 }
-/* background & sizing for form container */
-.form-text-container {
-	width: 432px;
-	min-height: 597px;
-	border-radius: 4px;
-	background: var(--bg-color);
-	padding: 20px;
-	background-image: url('../assets/images/contact-form.png');
-	background-position: center;
-	background-size: cover;
-}
-/* heading for form-text-container */
-.form-text-container h2 {
-	color: var(--bg-color);
-	font-family: var(--font-family-headings);
-	font-size: 40px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-}
-/* paragraphs styles for form text container */
-.form-text-container p {
-	width: 384px;
-	color: var(--bg-color);
-	font-family: Lato, sans-serif;
-	font-size: 24px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-}
+/* CONTACT FORM STYLING */
 
 /* background & sizing for form container */
-.form-text-container {
-	width: 432px;
-	min-height: 597px;
-	border-radius: 4px;
-	background: var(--bg-color);
-	padding: 20px;
-	background-image: url('../assets/images/contact-form.png');
-	background-position: center;
-	background-size: cover;
-}
-/* heading for form-text-container */
-.form-text-container h2 {
-	color: var(--bg-color);
-	font-family: var(--font-family-headings);
-	font-size: 40px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-}
-/* paragraphs styles for form text container */
-.form-text-container p {
-	width: 384px;
-	color: var(--bg-color);
-	font-family: Lato, sans-serif;
-	font-size: 24px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-}
-
-/* FOOTER SECTION STYLES */
-/* footer flex layout */
-.footer-nav {
-	display: flex;
-	justify-content: space-between; /*for space between */
-}
-/* social icons flex layout */
-.social-icons {
-	display: flex;
-}
-/* RESPONSIVE MEDIA QUERIES */
-
-.wwd-heading {
+.contact-us-header {
 	color: var(--text-color);
 	font-family: var(--main-headings);
 	font-size: var(--font600);
 	font-weight: var(--main-headings-regular);
 }
 
-/* CURRENTLY WORKING ON CARDS */
 
-/* This is the container for each li (card-item) within the ul */
-.card-item {
-	/* exact top/bottom margin needed */
-	margin: 20px auto;
-	width: 100%;
-	padding: var(--spacing-intermediate);
-
-	/* placed in flexbox to put img and text side by side */
-	display: flex;
-	align-items: center;
-	gap: var(--spacing-medium);
-
-	background-color: var(--secondary-color);
-	border: 1px solid #dbdbdb;
-	border-radius: 8px;
+.form-text-container {
+	width: 432px;
+	min-height: 597px;
+	border-radius: 4px;
+	background: var(--bg-color);
+	padding: 20px;
+	background-image: url('../assets/images/contact-form.png');
+	background-position: center;
+	background-size: cover;
+}
+/* heading for form-text-container */
+.form-text-container h2 {
+	color: var(--bg-color);
+	font-family: var(--font-family-headings);
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+/* paragraphs styles for form text container */
+.form-text-container p {
+	width: 384px;
+	color: var(--bg-color);
+	font-family: Lato, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
 }
 
-/* Card-text Typography*/
-.card-text h3 {
-	color: var(--text-color);
-	font-family: var(--main-headings);
-	font-size: var(--font500);
-	font-weight: var(--main-headings-regular);
-}
-
-.card-text p {
-	color: var(--text-color);
-	font-family: var(--body-text);
-	font-size: var(--font300);
-	font-weight: var(--body-text-regular);
-}
-
-/* CONTACT FORM STYLES */
 
 /* LEFT AND RIGHT SCROLLING GALLERY IN THE FOOTER */
 .gallery-container {
@@ -679,6 +596,114 @@ option {
 }
 /* END OF THE LEFT AND RIGHT SCROLLING GALLERY IN THE FOOTER */
 
+/* FOOTER SECTION STYLES */
+/* footer flex layout */
+.footer-nav {
+	display: flex;
+	justify-content: space-between; /*for space between */
+}
+/* social icons flex layout */
+.social-icons {
+	display: flex;
+}
+
+.wwd-heading {
+	color: var(--text-color);
+	font-family: var(--main-headings);
+	font-size: var(--font600);
+	font-weight: var(--main-headings-regular);
+}
+/* MODAL STYLES LA */
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #222;
+	position: relative;
+	min-height: 100vh;
+}
+
+.modal {
+	gap: 0.4rem;
+	width: 1000px;
+	/* height: 1000px; */
+	padding: 1.3rem;
+	min-height: 250px;
+	position: fixed;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 2vh;
+	background-color: white;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	z-index: 2;
+}
+.btn-la {
+	display: inline-block;
+	font-weight: 700;
+	font-size: 1em;
+}
+.btn-la:hover {
+	color: red;
+}
+.btn-la,
+.btn-close button {
+	border: none;
+	background-color: transparent;
+}
+.btn-close img {
+	width: 32px;
+	height: 32px;
+}
+.modal-content h3 {
+	display: flex;
+	justify-content: center;
+	color: #d94252;
+	font-family: Josefin Sans;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 32px;
+}
+.btn-close {
+	display: flex;
+	justify-content: right;
+}
+.modal-content p {
+	font-family: Lato;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 32px;
+	margin-top: 20px;
+	margin: 20px 40px 0;
+}
+.image-la {
+	display: flex;
+	justify-content: center;
+	margin-top: 32px;
+	width: 100%;
+}
+.image-la img {
+	width: auto;
+}
+.overlay-la {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(3px);
+	z-index: 1;
+}
+.hidden {
+	display: none;
+}
+/* end of land popup */
+
 /* Theres was small space on the left of the ul so this is to get rid that */
 
 /* This is the container for each li (card-item) within the ul */
@@ -721,6 +746,36 @@ option {
 		background-image: url(../assets/mobile/contact-form.png);
 	}
 
+	/* CONTACT US SECTION */
+
+
+	/* font size changes */
+	
+	.form-container {
+		/* change from row to column */
+		flex-direction: column;
+	}
+	.form-text-container {
+		width: 100%;
+	}
+
+	.form-text-container h2 {
+		font-size: var(--font500);
+	}
+	
+	.form-text-container p {
+		/* text to fit screen */
+		width: 100%;
+		font-size: var(--font200);
+	}
+
+	
+	.name-input-container {
+		flex-direction: column;
+	
+
+	}
+	
 }
 
 /* Phone */
