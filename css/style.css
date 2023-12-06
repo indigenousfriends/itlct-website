@@ -86,8 +86,7 @@ body {
 
 /* GLOBAL STYLES (Desktop First for now) */
 /* global img style */
-img,
-svg {
+img {
   width: 100%;
   /* removes white space */
   display: block;
@@ -110,8 +109,7 @@ h2 {
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
-  line-height: 72px;
-  margin-top: 75px;
+  margin-top: var(--spacing-large);
 }
 
 /* Theres was small space on the left of the ul so this is to get rid that */
@@ -120,11 +118,8 @@ ul {
   padding: 0px;
 }
 
-/* whAT TERRY SENT */
-svg {
-  width: 48px;
-  height: 48px;
-  display: block;
+hr {
+  margin-top: var(--spacing-large);
 }
 /* global wrapper class */
 .wrapper {
@@ -158,9 +153,15 @@ header {
   background-size: cover;
 }
 
-social-media-icons {
+.social-media-icons {
   display: flex;
   flex-direction: row;
+}
+
+.social-icons svg {
+  width: 48px;
+  height: 48px;
+  display: block;
 }
 /* Need to replace color with variables */
 .svg-icon {
@@ -348,8 +349,6 @@ blockquote {
   border-bottom: 3px solid var(--teal);
 }
 
-/* WHAT WE DO STYLES */
-
 /* BUTTON STYLES */
 button {
   background-color: var(--teal);
@@ -385,7 +384,7 @@ button:active {
   align-items: center;
   border-color: transparent;
 }
-/* WHAT WE DO */
+/* WHAT WE DO STYLES */
 
 /* This is the container for each li (card-item) within the ul */
 .card-item {
@@ -410,6 +409,8 @@ button:active {
   font-family: var(--main-headings);
   font-size: var(--font500);
   font-weight: var(--main-headings-regular);
+  margin: 0px;
+  margin-bottom: 10px;
 }
 
 .card-text p {
@@ -417,6 +418,7 @@ button:active {
   font-family: var(--body-text);
   font-size: var(--font300);
   font-weight: var(--body-text-regular);
+  margin: 0px;
 }
 
 /* CONTACT FORM STYLES */
