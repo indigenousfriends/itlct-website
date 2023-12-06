@@ -131,7 +131,7 @@ svg {
 	max-width: 1440px;
 	margin: 0 auto;
 }
-.textarea { 
+.textarea {
 	resize: vertical;
 }
 
@@ -500,7 +500,6 @@ option {
 	font-weight: var(--main-headings-regular);
 }
 
-
 .form-text-container {
 	width: 432px;
 	min-height: 597px;
@@ -530,7 +529,6 @@ option {
 	font-weight: 400;
 	line-height: normal;
 }
-
 
 /* LEFT AND RIGHT SCROLLING GALLERY IN THE FOOTER */
 .gallery-container {
@@ -615,13 +613,13 @@ option {
 }
 /* MODAL STYLES LA */
 body {
-	display: flex;
+	/* display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: center; */
 	color: #222;
-	position: relative;
-	min-height: 100vh;
+	/* position: relative; */
+	/* min-height: 100vh; */
 }
 
 .modal {
@@ -748,9 +746,8 @@ body {
 
 	/* CONTACT US SECTION */
 
-
 	/* font size changes */
-	
+
 	.form-container {
 		/* change from row to column */
 		flex-direction: column;
@@ -762,20 +759,16 @@ body {
 	.form-text-container h2 {
 		font-size: var(--font500);
 	}
-	
+
 	.form-text-container p {
 		/* text to fit screen */
 		width: 100%;
 		font-size: var(--font200);
 	}
 
-	
 	.name-input-container {
 		flex-direction: column;
-	
-
 	}
-	
 }
 
 /* Phone */
