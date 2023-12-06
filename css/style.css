@@ -141,10 +141,6 @@ hr {
   overflow: hidden;
 }
 
-.textarea {
-  resize: vertical;
-}
-
 /* HEADER STYLES */
 header {
   width: 100%;
@@ -349,41 +345,6 @@ blockquote {
   border-bottom: 3px solid var(--teal);
 }
 
-/* BUTTON STYLES */
-button {
-  background-color: var(--teal);
-  color: var(--secondary-color);
-  font-family: var(--button-text);
-  font-size: var(--font100);
-  border: transparent solid 4px;
-  align-items: center;
-  font-weight: var(--bold);
-  transition-duration: 0.2s;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-button:hover,
-button:focus {
-  background-color: var(--dark-teal);
-  color: var(--secondary-color);
-  align-items: center;
-  cursor: pointer;
-}
-
-button:focus {
-  outline-color: var(--dark-teal);
-  border-color: var(--dark-teal);
-  align-items: center;
-}
-
-button:active {
-  background-color: var(--teal);
-  outline-style: solid;
-  outline-color: var(--light-teal);
-  align-items: center;
-  border-color: transparent;
-}
 /* WHAT WE DO STYLES */
 
 /* This is the container for each li (card-item) within the ul */
@@ -434,18 +395,20 @@ button:active {
 
 /* container styling for form-text container and input-container */
 .form-container {
+  display: flex;
+  flex-direction: row;
   background-color: var(--secondary-color);
   color: var(--text-color);
   font-family: var(--main-headings);
   font-weight: var(--main-headings-400);
   font-size: var(--font300);
-  display: flex;
-  flex-direction: row;
   gap: 20px;
+  border: 1px solid var(--form-gray);
+  padding: 20px;
+  margin-bottom: var(--spacing-xl);
 }
 
 form {
-  border: 1px solid var(--form-gray);
   padding: 10px;
 }
 
@@ -473,19 +436,60 @@ form {
   flex-wrap: nowrap;
   gap: 10px;
 }
+
+/* name input container */
+.name-inputs {
+  width: 50%;
+}
+
 /* flex box for the button on the form */
 .submit-button {
   display: flex;
   justify-content: flex-end;
 }
 
-/* Kyla - button styles */
+/* BUTTON STYLES */
+button {
+  background-color: var(--teal);
+  color: var(--secondary-color);
+  font-family: var(--button-text);
+  font-size: var(--font100);
+  border: transparent solid 4px;
+  align-items: center;
+  font-weight: var(--bold);
+  transition-duration: 0.2s;
+  padding: 5px 5px 2px 5px;
+  border-radius: 5px;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--dark-teal);
+  color: var(--secondary-color);
+  align-items: center;
+  cursor: pointer;
+}
+
+button:focus {
+  outline-color: var(--dark-teal);
+  border-color: var(--dark-teal);
+  align-items: center;
+}
+
+button:active {
+  background-color: var(--teal);
+  outline-style: solid;
+  outline-color: var(--light-teal);
+  align-items: center;
+  border-color: transparent;
+}
 
 /* form input styling */
 input[type="text"],
 [type="email"],
 select,
 textarea {
+  resize: vertical;
   font-family: var(--detail-text);
   font-size: var(--font200);
   font-weight: var(--body-text-400);
@@ -497,7 +501,9 @@ textarea {
   padding: 10px;
   margin: 5px 0;
 }
-
+textarea {
+  min-height: 10.25rem;
+}
 /* to keep the 'select' dropdown text uniform with the rest of the form */
 option {
   color: var(--form-select);
@@ -529,6 +535,7 @@ option {
   background-position: center;
   background-size: cover;
 }
+
 /* heading for form-text-container */
 .form-text-container h2 {
   color: var(--bg-color);
@@ -537,6 +544,7 @@ option {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-top: 0;
 }
 /* paragraphs styles for form text container */
 .form-text-container p {
