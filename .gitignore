@@ -13,3 +13,4 @@ Thumbs.db
 
 # Ignore Visual Studio Code settings
 .vscode/
+*.code-workspace
