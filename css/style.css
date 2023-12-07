@@ -310,7 +310,7 @@ header .wrapper {
   font-family: var(--main-headings);
   font-size: var(--font600);
   font-weight: var(--main-headings-regular);
-  color: var(--secondary-color);
+  color: var(--text-color);
 }
 .who-we-are .overlay-who {
   color: var(--secondary-color);
@@ -817,6 +817,13 @@ footer nav {
   }
 
   /* Who We Are styles */
+  .who-we-are .overlay-who {
+    padding-top: 95px;
+  }
+
+  .ecosystem-banner {
+    min-height: 150px;
+  }
   /* reduced the indent */
   blockquote {
     padding-left: var(--spacing-medium);
@@ -825,8 +832,15 @@ footer nav {
   /* reduced the size of the - before the blockquote */
   .solid-line-indent::before {
     width: 16px;
+    top: 6%;
+    left: 2%;
   }
 
+  /* adjusting hr in who we are */
+
+  .who-we-are hr {
+    margin-top: var(--spacing-medium);
+  }
   /* footer styles */
 
   /* adjusting nav elements in footer */
