@@ -195,20 +195,20 @@ header {
   border-bottom: 4px solid #d94252;
   background: linear-gradient(0deg, #ff7a88 0%, #ff7a88 100%), #fff;
   width: 100%;
-  height: 46px;
-  text-align: center;
+  min-height: 56px;
   position: relative;
   padding: 5px;
 }
 
 .wuc-paragraph {
-  color: #1a1a1a;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
+  color: var(--onyx);
+  font-family: var(--main-headings);
+  font-size: var(--font200);
+  font-weight: var(--body-text-400);
+  text-align: center;
   line-height: 32px;
   margin: 10px;
+  padding: 12px;
 }
 
 .under-construction-button {
@@ -218,7 +218,7 @@ header {
   border: none;
   position: absolute;
   top: 30%;
-  right: 1%;
+  right: 10px;
   cursor: pointer;
 }
 
@@ -250,9 +250,8 @@ header {
 
 /* logo container */
 .logohead {
-  width: 312px;
+  min-width: 312px;
   height: 124px;
-  margin-top: var(--spacing-medium);
 }
 
 .footlogo {
@@ -284,6 +283,7 @@ header .wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: var(--spacing-medium);
 }
 
 .logo {
@@ -298,9 +298,6 @@ header .wrapper {
   display: flex;
   align-self: center;
   justify-content: space-around;
-  padding: 30px;
-  margin-right: 100px;
-
   /* to center the social icons vertically */
 }
 
@@ -649,13 +646,12 @@ footer nav {
 /* MODAL STYLES LA */
 
 .modal {
-  gap: 0.4rem;
-  width: 1000px;
-  /* height: 1000px; */
-  padding: 1.3rem;
-  min-height: 250px;
-  position: fixed;
+  height: 95vh;
+  width: 90%;
+  max-width: 1100px;
   margin: 0 auto;
+  padding: 1.3rem;
+  position: fixed;
   left: 0;
   right: 0;
   top: 2vh;
@@ -667,11 +663,12 @@ footer nav {
 
 .btn-la {
   display: inline-block;
-  font-weight: 700;
   font-size: var(--font300);
+  font-weight: var(--body-text-regular);
   color: black;
   height: fit-content;
 }
+
 .btn-la:hover,
 .btn-la:focus {
   background-color: transparent;
@@ -699,6 +696,12 @@ footer nav {
   display: flex;
   justify-content: right;
 }
+/* scrollable modal content */
+.modal-scroll {
+  overflow-y: scroll;
+  max-height: calc(85vh - 300px);
+}
+
 .modal-content p {
   font-family: Lato;
   font-size: 20px;
@@ -756,7 +759,14 @@ footer nav {
 }
 
 @media screen and (max-width: 768px) {
-  /* header section */
+  /* Header styles */
+
+  /* logo sizing adjustments */
+  .logohead {
+    min-width: 124px;
+    height: 50px;
+  }
+
   .header {
     background-image: url("../assets/mobile/hero-image.png");
   }
@@ -800,6 +810,9 @@ footer nav {
   .name-input-container {
     flex-direction: column;
   }
+
+  /* modal styles */
+  /* adjusting wrapping size */
 }
 
 /* Phone */
@@ -814,6 +827,17 @@ footer nav {
     --font500: 1.68rem; /* 26.8px */
     --font600: 1.93rem; /* 30.8px */
     --font900: 2.75rem; /* 44px */
+  }
+
+  /* Header styles */
+  /* adding space between socials icons and logo */
+  .header-nav {
+    gap: 20px;
+  }
+  /* social icons */
+  .social-icons svg {
+    width: 32px;
+    height: 32px;
   }
 
   /* Who We Are styles */
