@@ -45,6 +45,7 @@ body {
   --form-unselected: #808080;
   --form-unselected: rgb(92, 92, 92);
   --form-gray: #c5c5c5;
+  --hr-color: #8e8e8e;
   --amaranth: #d94252;
   --teal: #007a80;
   --dark-teal: #00585c;
@@ -106,7 +107,7 @@ img {
 h2 {
   color: var(--Teal, #007a80);
   font-family: Josefin Sans;
-  font-size: 64px;
+  font-size: var(--font900);
   font-style: normal;
   font-weight: 700;
   margin-top: var(--spacing-large);
@@ -120,6 +121,8 @@ ul {
 
 hr {
   margin-top: var(--spacing-large);
+  height: 2px;
+  background-color: var(--hr-color);
 }
 /* global wrapper class */
 .wrapper {
@@ -542,24 +545,22 @@ option {
 }
 
 /* heading for form-text-container */
+
 .form-text-container h2 {
   color: var(--bg-color);
-  font-family: var(--font-family-headings);
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-family: var(--main-headings);
+  font-size: var(--font600);
+  font-weight: var(--main-headings-regular);
   margin-top: 0;
 }
+
 /* paragraphs styles for form text container */
 .form-text-container p {
   width: 384px;
   color: var(--bg-color);
-  font-family: Lato, sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font-family: var(--body-text);
+  font-size: var(--font300);
+  font-weight: var(--main-headings-regular);
 }
 
 /* LEFT AND RIGHT SCROLLING GALLERY IN THE FOOTER */
@@ -743,13 +744,30 @@ footer nav {
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 850px) {
+  /* contact form section */
+  /* adjusting first and last name inputs */
+  .name-input-container {
+    flex-direction: column;
+  }
+  .name-inputs {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 768px) {
-  /* What We Do Section */
-  /* font size change */
-  .wwd-heading {
-    font-size: var(--font500);
+  /* header section */
+  .header {
+    background-image: url("../assets/mobile/hero-image.png");
   }
 
+  /* who we are section */
+
+  .ecosystem-banner {
+    background-image: url("../assets/mobile/global-ecosystem.png");
+  }
+
+  /* What We Do Section */
   .card-item {
     /* from row to columns */
     flex-direction: column;
@@ -757,48 +775,26 @@ footer nav {
     margin: 25px auto;
   }
 
-  /* font size change */
-  .card-text h3 {
-    font-size: var(--font400);
-  }
-
-  /* font size change */
-  .card-text p {
-    font-size: var(--font200);
-  }
-
-  .header {
-    background-image: url(../assets/mobile/hero-image.png);
-  }
-
-  .ecosystem-banner {
-    background-image: url(../assets/mobile/global-ecosystem.png);
-  }
-
-  .form-text-container {
-    background-image: url(../assets/mobile/contact-form.png);
-  }
-
   /* CONTACT US SECTION */
 
   /* font size changes */
 
+  /* img url update to mobile */
+  .form-text-container {
+    background-image: url("../assets/mobile/contact-form.png");
+  }
   .form-container {
     /* change from row to column */
     flex-direction: column;
   }
+
   .form-text-container {
     width: 100%;
+    min-height: 430px;
   }
-
-  .form-text-container h2 {
-    font-size: var(--font500);
-  }
-
   .form-text-container p {
     /* text to fit screen */
     width: 100%;
-    font-size: var(--font200);
   }
 
   .name-input-container {
@@ -808,11 +804,18 @@ footer nav {
 
 /* Phone */
 @media screen and (max-width: 480px) {
-  /* Global Wrapper (adjusting width variable) */
+  /* adjusting variables */
   :root {
-    /* increasing wrapper width- to take up more screen */
+    /* increasing wrapper width - to take up more screen */
     --wrapper-width: 90%;
+
+    /* adjusting font-sizes */
+    --font300: 1.25rem; /* 20px */
+    --font500: 1.68rem; /* 26.8px */
+    --font600: 1.93rem; /* 30.8px */
+    --font900: 2.75rem; /* 44px */
   }
+
   /* Who We Are styles */
   /* reduced the indent */
   blockquote {
@@ -822,5 +825,12 @@ footer nav {
   /* reduced the size of the - before the blockquote */
   .solid-line-indent::before {
     width: 16px;
+  }
+
+  /* footer styles */
+
+  /* adjusting nav elements in footer */
+  footer nav {
+    flex-direction: column;
   }
 }
