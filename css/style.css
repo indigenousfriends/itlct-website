@@ -643,6 +643,7 @@ footer nav {
   font-size: var(--font600);
   font-weight: var(--main-headings-regular);
 }
+
 /* MODAL STYLES LA */
 
 .modal {
@@ -687,9 +688,10 @@ footer nav {
   display: flex;
   justify-content: center;
   color: var(--amaranth);
-  font-family: Josefin Sans;
-  font-size: 36px;
-  font-weight: 700;
+  font-family: var(--main-headings);
+  font-size: var(--font600);
+  font-weight: var(--bold);
+  text-align: center;
   line-height: 32px;
 }
 .btn-close {
@@ -703,10 +705,9 @@ footer nav {
 }
 
 .modal-content p {
-  font-family: Lato;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 32px;
+  font-family: var(--body-text);
+  font-size: var(--font200);
+  line-height: var(--spacing-medium);
   margin-top: 20px;
   margin: 20px 40px 0;
 }
@@ -810,9 +811,6 @@ footer nav {
   .name-input-container {
     flex-direction: column;
   }
-
-  /* modal styles */
-  /* adjusting wrapping size */
 }
 
 /* Phone */
