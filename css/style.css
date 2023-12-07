@@ -45,6 +45,7 @@ body {
   --form-unselected: #808080;
   --form-unselected: rgb(92, 92, 92);
   --form-gray: #c5c5c5;
+  --hr-color: #8e8e8e;
   --amaranth: #d94252;
   --teal: #007a80;
   --dark-teal: #00585c;
@@ -106,7 +107,7 @@ img {
 h2 {
   color: var(--Teal, #007a80);
   font-family: Josefin Sans;
-  font-size: 64px;
+  font-size: var(--font900);
   font-style: normal;
   font-weight: 700;
   margin-top: var(--spacing-large);
@@ -120,6 +121,8 @@ ul {
 
 hr {
   margin-top: var(--spacing-large);
+  height: 2px;
+  background-color: var(--hr-color);
 }
 /* global wrapper class */
 .wrapper {
@@ -192,20 +195,20 @@ header {
   border-bottom: 4px solid #d94252;
   background: linear-gradient(0deg, #ff7a88 0%, #ff7a88 100%), #fff;
   width: 100%;
-  height: 46px;
-  text-align: center;
+  min-height: 56px;
   position: relative;
   padding: 5px;
 }
 
 .wuc-paragraph {
-  color: #1a1a1a;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
+  color: var(--onyx);
+  font-family: var(--main-headings);
+  font-size: var(--font200);
+  font-weight: var(--body-text-400);
+  text-align: center;
   line-height: 32px;
   margin: 10px;
+  padding: 12px;
 }
 
 .under-construction-button {
@@ -215,7 +218,7 @@ header {
   border: none;
   position: absolute;
   top: 30%;
-  right: 1%;
+  right: 10px;
   cursor: pointer;
 }
 
@@ -247,9 +250,8 @@ header {
 
 /* logo container */
 .logohead {
-  width: 312px;
+  min-width: 312px;
   height: 124px;
-  margin-top: var(--spacing-medium);
 }
 
 .footlogo {
@@ -281,6 +283,7 @@ header .wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: var(--spacing-medium);
 }
 
 .logo {
@@ -295,9 +298,6 @@ header .wrapper {
   display: flex;
   align-self: center;
   justify-content: space-around;
-  padding: 30px;
-  margin-right: 100px;
-
   /* to center the social icons vertically */
 }
 
@@ -307,7 +307,7 @@ header .wrapper {
   font-family: var(--main-headings);
   font-size: var(--font600);
   font-weight: var(--main-headings-regular);
-  color: var(--secondary-color);
+  color: var(--text-color);
 }
 .who-we-are .overlay-who {
   color: var(--secondary-color);
@@ -542,24 +542,22 @@ option {
 }
 
 /* heading for form-text-container */
+
 .form-text-container h2 {
   color: var(--bg-color);
-  font-family: var(--font-family-headings);
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-family: var(--main-headings);
+  font-size: var(--font600);
+  font-weight: var(--main-headings-regular);
   margin-top: 0;
 }
+
 /* paragraphs styles for form text container */
 .form-text-container p {
   width: 384px;
   color: var(--bg-color);
-  font-family: Lato, sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font-family: var(--body-text);
+  font-size: var(--font300);
+  font-weight: var(--main-headings-regular);
 }
 
 /* LEFT AND RIGHT SCROLLING GALLERY IN THE FOOTER */
@@ -645,16 +643,16 @@ footer nav {
   font-size: var(--font600);
   font-weight: var(--main-headings-regular);
 }
+
 /* MODAL STYLES LA */
 
 .modal {
-  gap: 0.4rem;
-  width: 1000px;
-  /* height: 1000px; */
-  padding: 1.3rem;
-  min-height: 250px;
-  position: fixed;
+  height: 95vh;
+  width: 90%;
+  max-width: 1100px;
   margin: 0 auto;
+  padding: 1.3rem;
+  position: fixed;
   left: 0;
   right: 0;
   top: 2vh;
@@ -666,11 +664,12 @@ footer nav {
 
 .btn-la {
   display: inline-block;
-  font-weight: 700;
   font-size: var(--font300);
+  font-weight: var(--body-text-regular);
   color: black;
   height: fit-content;
 }
+
 .btn-la:hover,
 .btn-la:focus {
   background-color: transparent;
@@ -689,20 +688,26 @@ footer nav {
   display: flex;
   justify-content: center;
   color: var(--amaranth);
-  font-family: Josefin Sans;
-  font-size: 36px;
-  font-weight: 700;
+  font-family: var(--main-headings);
+  font-size: var(--font600);
+  font-weight: var(--bold);
+  text-align: center;
   line-height: 32px;
 }
 .btn-close {
   display: flex;
   justify-content: right;
 }
+/* scrollable modal content */
+.modal-scroll {
+  overflow-y: scroll;
+  max-height: calc(85vh - 300px);
+}
+
 .modal-content p {
-  font-family: Lato;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 32px;
+  font-family: var(--body-text);
+  font-size: var(--font200);
+  line-height: var(--spacing-medium);
   margin-top: 20px;
   margin: 20px 40px 0;
 }
@@ -743,13 +748,37 @@ footer nav {
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 850px) {
+  /* contact form section */
+  /* adjusting first and last name inputs */
+  .name-input-container {
+    flex-direction: column;
+  }
+  .name-inputs {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 768px) {
-  /* What We Do Section */
-  /* font size change */
-  .wwd-heading {
-    font-size: var(--font500);
+  /* Header styles */
+
+  /* logo sizing adjustments */
+  .logohead {
+    min-width: 124px;
+    height: 50px;
   }
 
+  .header {
+    background-image: url("../assets/mobile/hero-image.png");
+  }
+
+  /* who we are section */
+
+  .ecosystem-banner {
+    background-image: url("../assets/mobile/global-ecosystem.png");
+  }
+
+  /* What We Do Section */
   .card-item {
     /* from row to columns */
     flex-direction: column;
@@ -757,48 +786,26 @@ footer nav {
     margin: 25px auto;
   }
 
-  /* font size change */
-  .card-text h3 {
-    font-size: var(--font400);
-  }
-
-  /* font size change */
-  .card-text p {
-    font-size: var(--font200);
-  }
-
-  .header {
-    background-image: url(../assets/mobile/hero-image.png);
-  }
-
-  .ecosystem-banner {
-    background-image: url(../assets/mobile/global-ecosystem.png);
-  }
-
-  .form-text-container {
-    background-image: url(../assets/mobile/contact-form.png);
-  }
-
   /* CONTACT US SECTION */
 
   /* font size changes */
 
+  /* img url update to mobile */
+  .form-text-container {
+    background-image: url("../assets/mobile/contact-form.png");
+  }
   .form-container {
     /* change from row to column */
     flex-direction: column;
   }
+
   .form-text-container {
     width: 100%;
+    min-height: 430px;
   }
-
-  .form-text-container h2 {
-    font-size: var(--font500);
-  }
-
   .form-text-container p {
     /* text to fit screen */
     width: 100%;
-    font-size: var(--font200);
   }
 
   .name-input-container {
@@ -808,12 +815,37 @@ footer nav {
 
 /* Phone */
 @media screen and (max-width: 480px) {
-  /* Global Wrapper (adjusting width variable) */
+  /* adjusting variables */
   :root {
-    /* increasing wrapper width- to take up more screen */
+    /* increasing wrapper width - to take up more screen */
     --wrapper-width: 90%;
+
+    /* adjusting font-sizes */
+    --font300: 1.25rem; /* 20px */
+    --font500: 1.68rem; /* 26.8px */
+    --font600: 1.93rem; /* 30.8px */
+    --font900: 2.75rem; /* 44px */
   }
+
+  /* Header styles */
+  /* adding space between socials icons and logo */
+  .header-nav {
+    gap: 20px;
+  }
+  /* social icons */
+  .social-icons svg {
+    width: 32px;
+    height: 32px;
+  }
+
   /* Who We Are styles */
+  .who-we-are .overlay-who {
+    padding-top: 95px;
+  }
+
+  .ecosystem-banner {
+    min-height: 150px;
+  }
   /* reduced the indent */
   blockquote {
     padding-left: var(--spacing-medium);
@@ -822,5 +854,19 @@ footer nav {
   /* reduced the size of the - before the blockquote */
   .solid-line-indent::before {
     width: 16px;
+    top: 6%;
+    left: 2%;
+  }
+
+  /* adjusting hr in who we are */
+
+  .who-we-are hr {
+    margin-top: var(--spacing-medium);
+  }
+  /* footer styles */
+
+  /* adjusting nav elements in footer */
+  footer nav {
+    flex-direction: column;
   }
 }
