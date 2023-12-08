@@ -604,14 +604,15 @@ option {
 	-o-transition: right 1s;
 	transition: 1s;
 }
-.group-one:hover img {
+/* .group-one:hover img {
 	right: 265px;
 	-webkit-transition: all 1s;
 	-moz-transition: all 1s;
 	-ms-transition: all 1s;
 	-o-transition: all 1s;
 	transition: all 1s;
-}
+} */
+
 .group-two img {
 	right: -148px;
 	position: relative;
@@ -624,14 +625,16 @@ option {
 	-o-transition: right 1s;
 	transition: 1s;
 }
-.group-two:hover img {
+
+/* .group-two:hover img {
 	right: 148px;
 	-webkit-transition: all 1s;
 	-moz-transition: all 1s;
 	-ms-transition: all 1s;
 	-o-transition: all 1s;
 	transition: all 1s;
-}
+} */
+
 /* END OF THE LEFT AND RIGHT SCROLLING GALLERY IN THE FOOTER */
 
 /* FOOTER SECTION STYLES */
@@ -820,6 +823,39 @@ footer nav {
 
 	.name-input-container {
 		flex-direction: column;
+	}
+
+	.gallery-container,
+	.group-one,
+	.group-two {
+		height: auto;
+		gap: var(--gap-sm);
+		padding: 0;
+	}
+
+	.gallery-container {
+		padding: 0 var(--gap-sm);
+	}
+
+	.group-one {
+		flex-direction: column;
+	}
+
+	.group-one img,
+	.group-two img {
+		display: none;
+		position: static;
+		margin: 0;
+	}
+
+	.group-one img:nth-of-type(2) {
+		display: block;
+	}
+
+	.group-two img:nth-of-type(2),
+	.group-two img:nth-of-type(3) {
+		display: block;
+		width: 50%;
 	}
 
 	.modal {
