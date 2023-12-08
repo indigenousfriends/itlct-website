@@ -69,6 +69,11 @@ body {
 	--font700: 3rem;
 	--font800: 3.5rem;
 	--font900: 4rem;
+
+	/* line heights */
+	--line-height-md: 1.5rem;
+	--line-height-lg: 2rem;
+
 	--bold: bold;
 	--underline: underline;
 
@@ -83,6 +88,9 @@ body {
 	--spacing-xl: 6rem;
 	--spacing-xxl: 12rem;
 	--spacing-xxxl: 22rem;
+
+	--gap-sm: 10px;
+	--gap-md: 20px;
 }
 
 /* GLOBAL STYLES (Desktop First for now) */
@@ -99,7 +107,7 @@ img {
 	font-size: 24px;
 	font-style: normal;
 	font-weight: 500;
-	line-height: 32px;
+	line-height: var(--line-height-lg);
 	position: absolute;
 	margin: 19px 0;
 }
@@ -206,7 +214,7 @@ header {
 	font-size: var(--font200);
 	font-weight: var(--body-text-400);
 	text-align: center;
-	line-height: 32px;
+	line-height: var(--line-height-lg);
 	margin: 10px;
 	padding: 12px;
 }
@@ -337,7 +345,7 @@ blockquote {
 	padding-left: var(--spacing-xl);
 	margin-left: 0;
 	margin-right: 0;
-	line-height: 1.5rem;
+	line-height: var(--line-height-md);
 }
 .solid-line-indent {
 	position: relative;
@@ -363,8 +371,7 @@ blockquote {
 	/* placed in flexbox to put img and text side by side */
 	display: flex;
 	align-items: center;
-	gap: var(--spacing-medium);
-
+	gap: var(--gap-md);
 	background-color: var(--secondary-color);
 	border: 1px solid #dbdbdb;
 	border-radius: 8px;
@@ -408,7 +415,7 @@ blockquote {
 	font-family: var(--main-headings);
 	font-weight: var(--main-headings-400);
 	font-size: var(--font300);
-	gap: 20px;
+	gap: var(--gap-md);
 	border: 1px solid var(--form-gray);
 	padding: 20px;
 	margin-bottom: var(--spacing-xl);
@@ -425,7 +432,7 @@ form {
 .contact-us-form {
 	display: flex;
 	flex-direction: column;
-	row-gap: 10px;
+	row-gap: var(--gap-sm);
 	width: 100%;
 }
 
@@ -440,7 +447,7 @@ form {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	gap: 10px;
+	gap: var(--gap-sm);
 }
 
 /* name input container */
@@ -636,7 +643,7 @@ footer nav {
 /* social icons flex layout */
 .social-icons {
 	display: flex;
-	gap: var(--spacing-small);
+	gap: var(--gap-sm);
 }
 
 .wwd-heading {
@@ -694,7 +701,7 @@ footer nav {
 	font-size: var(--font600);
 	font-weight: var(--bold);
 	text-align: center;
-	line-height: 32px;
+	line-height: var(--line-height-lg);
 }
 .btn-close {
 	display: flex;
@@ -832,7 +839,7 @@ footer nav {
 	/* Header styles */
 	/* adding space between socials icons and logo */
 	.header-nav {
-		gap: 20px;
+		gap: var(--gap-md);
 	}
 	/* social icons */
 	.social-icons svg {
