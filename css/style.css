@@ -694,7 +694,7 @@ footer nav {
 	width: 32px;
 	height: 32px;
 }
-.modal-content h3 {
+.modal-header h3 {
 	display: flex;
 	justify-content: center;
 	color: var(--amaranth);
@@ -711,7 +711,7 @@ footer nav {
 /* scrollable modal content */
 .modal-scroll {
 	overflow-y: scroll;
-	max-height: calc(85vh - 300px);
+	max-height: calc(100vh - 260px);
 }
 
 .modal-content p {
@@ -879,16 +879,54 @@ footer nav {
 
 	.modal {
 		margin: 0;
-		width: 100%;
+		top: 0;
+		bottom: 0;
+		height: 100vh;
+		width: 100vw;
+		padding: 0;
+		background-color: var(--bg-color);
 	}
 
-	.modal-content h3 {
+	.modal-wrapper {
+		position: relative;
+		display: flex;
+		flex-flow: column;
+		height: 100%;
+		justify-content: space-between;
+	}
+
+	.modal .btn-close {
+		position: absolute;
+		right: 8px;
+		top: 8px;
+	}
+
+	.modal-header {
+		box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.15);
+		padding: var(--spacing-medium) var(--spacing-small);
+		margin-bottom: 10px;
+	}
+
+	.modal-header h3 {
+		margin: 0;
 		line-height: var(--line-height-xl);
 	}
 
+	.modal-content {
+		padding: var(--spacing-small);
+	}
+
 	.modal-content p {
-		margin-left: 0;
-		margin-right: 0;
+		margin: 0 0 var(--spacing-small) 0;
+		font-size: var(--font100);
+	}
+
+	.image-la {
+		margin-top: var(--spacing-small);
+	}
+
+	.image-la img {
+		height: 50px;
 	}
 
 	/* footer styles */
