@@ -1,18 +1,8 @@
 /* BOX SIZING */
-html {
-	box-sizing: border-box;
-}
-
 *,
 *:before,
 *:after {
 	box-sizing: inherit;
-}
-
-/* Setting the default px value for all fonts (has to be done before rems) */
-body {
-	font-size: 16px;
-	background-color: var(--bg-color);
 }
 
 /* VARIABLES */
@@ -73,6 +63,7 @@ body {
 	/* line heights */
 	--line-height-md: 1.5rem;
 	--line-height-lg: 2rem;
+	--line-height-xl: 2.8rem;
 
 	--bold: bold;
 	--underline: underline;
@@ -91,6 +82,16 @@ body {
 
 	--gap-sm: 10px;
 	--gap-md: 20px;
+}
+
+/* Setting the default px value for all fonts (has to be done before rems) */
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+body {
+	background-color: var(--bg-color);
 }
 
 /* GLOBAL STYLES (Desktop First for now) */
@@ -824,16 +825,19 @@ footer nav {
 
 /* Phone */
 @media screen and (max-width: 480px) {
-	/* adjusting variables */
-	:root {
+	adjusting variables :root {
 		/* increasing wrapper width - to take up more screen */
 		--wrapper-width: 90%;
 
 		/* adjusting font-sizes */
+		--font200: 1rem; /* 16px */
 		--font300: 1.25rem; /* 20px */
-		--font500: 1.68rem; /* 26.8px */
-		--font600: 1.93rem; /* 30.8px */
+		--font500: 1.68rem; /* 27px */
+		--font600: 1.93rem; /* 31px */
 		--font900: 2.75rem; /* 44px */
+
+		/* adjusting line-heights */
+		--line-height-lg: 2rem;
 	}
 
 	/* Header styles */
@@ -872,6 +876,21 @@ footer nav {
 	.who-we-are hr {
 		margin-top: var(--spacing-medium);
 	}
+
+	.modal {
+		margin: 0;
+		width: 100%;
+	}
+
+	.modal-content h3 {
+		line-height: var(--line-height-xl);
+	}
+
+	.modal-content p {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
 	/* footer styles */
 
 	/* adjusting nav elements in footer */
