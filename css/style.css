@@ -811,6 +811,20 @@ footer nav {
   .name-input-container {
     flex-direction: column;
   }
+    /* Footer */
+
+   /* Land Acknowledgement button placement */
+   .nav {
+    position: relative;
+    padding-top: 50px;
+  }
+
+  .btn-la {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    margin: -60px -144px 0 0;
+  }
 }
 
 /* Phone */
@@ -865,8 +879,8 @@ footer nav {
   }
   /* footer styles */
 
-  /* adjusting nav elements in footer */
-  footer nav {
-    flex-direction: column;
+  /* Land Acknowledge button placement */
+  .btn-la {
+    margin: -50px -120px 0 0;
   }
 }
