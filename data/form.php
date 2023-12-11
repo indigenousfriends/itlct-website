@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // $to = 'info@iftheselandscouldtalk.org';
     // $events = 'events@iftheselandscouldtalk.org';
-    $test = 'max@indigenousfriends.org., lianna@gmail.com';
+    $test = 'max@indigenousfriends.org';
     $testEvents = 'max+events@indigenousfriends.org';
     $to = $test;
 
