@@ -624,6 +624,7 @@ option {
 	-ms-transition: right 1s;
 	-o-transition: right 1s;
 	transition: 1s;
+	max-height: 100%;
 }
 
 /* .group-two:hover img {
@@ -846,6 +847,7 @@ footer nav {
 		display: none;
 		position: static;
 		margin: 0;
+		max-height: 100%;
 	}
 
 	.group-one img:nth-of-type(2) {
@@ -855,7 +857,7 @@ footer nav {
 	.group-two img:nth-of-type(2),
 	.group-two img:nth-of-type(3) {
 		display: block;
-		width: 50%;
+		width: 49%;
 	}
 
 	/* Footer */
