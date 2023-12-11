@@ -858,6 +858,22 @@ footer nav {
 		width: 50%;
 	}
 
+	/* Footer */
+
+	/* Land Acknowledgement button placement */
+
+	.nav {
+		position: relative;
+		padding-top: 50px;
+	}
+
+	.btn-la {
+		position: absolute;
+		right: 50%;
+		top: 50%;
+		margin: -60px -144px 0 0;
+	}
+
 	.modal {
 		margin: 0;
 		top: 0;
