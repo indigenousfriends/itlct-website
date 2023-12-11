@@ -11,8 +11,10 @@ constructionButton.addEventListener("click", function () {
     constructionBanner.style.display = "none";
 });
 
-
-
-
-
-
+// Form handling
+window.onload = function () {
+    var urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('success') && urlParams.get('success') === 'true') {
+    console.log('Message sent successfully');
+    }
+}

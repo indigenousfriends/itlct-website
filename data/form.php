@@ -26,9 +26,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $firstName\n\nEmail: $email\n\nMessage:\n$message";
 
     if(mail($to, $subject, $body, $headers)){
-        echo 'Message sent successfully';
+        // Go back to the URL we started from, add ?success paramater to url
+        header('Location: ' . $_SERVER['HTTP_REFERER'] . '?success=true');
+        exit;
     } else {
         echo 'Message sending failed';
     }
 }
+
 ?>
