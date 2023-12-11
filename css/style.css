@@ -207,6 +207,9 @@ header {
 	min-height: 56px;
 	position: relative;
 	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .wuc-paragraph {
@@ -215,7 +218,7 @@ header {
 	font-size: var(--font200);
 	font-weight: var(--body-text-400);
 	text-align: center;
-	line-height: var(--line-height-lg);
+	line-height: var(--line-height-md);
 	margin: 10px;
 	padding: 12px;
 }
@@ -567,7 +570,7 @@ option {
 	color: var(--bg-color);
 	font-family: var(--body-text);
 	font-size: var(--font300);
-	font-weight: var(--main-headings-regular);
+	font-weight: var(--body-text-400);
 }
 
 /* LEFT AND RIGHT SCROLLING GALLERY IN THE FOOTER */
@@ -775,6 +778,16 @@ footer nav {
 
 @media screen and (max-width: 768px) {
 	/* Header styles */
+
+	.under-construction {
+		padding: var(--spacing-small) var(--spacing-medium);
+	}
+
+	.wuc-paragraph {
+		font-size: var(--font100);
+		margin: 0;
+		padding: 0;
+	}
 
 	/* logo sizing adjustments */
 	.logohead {
