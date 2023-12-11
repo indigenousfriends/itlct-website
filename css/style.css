@@ -929,6 +929,11 @@ footer nav {
 	.form-text-container {
 		background-image: url('../assets/mobile/contact-form.png');
 	}
+
+	/* CONTACT US SECTION */
+
+	/* font size changes */
+
 	.form-container {
 		/* change from row to column */
 		flex-direction: column;
