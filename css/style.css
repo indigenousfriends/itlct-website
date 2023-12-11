@@ -136,7 +136,7 @@ hr {
 /* global wrapper class */
 .wrapper {
 	width: var(--wrapper-width);
-	max-width: 1440px;
+	max-width: 1230px;
 	margin: 0 auto;
 }
 
@@ -762,7 +762,7 @@ footer nav {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1100px) {
 	/* contact form section */
 	/* adjusting first and last name inputs */
 	.name-input-container {
@@ -803,28 +803,6 @@ footer nav {
 	/* CONTACT US SECTION */
 
 	/* font size changes */
-
-	/* img url update to mobile */
-	.form-text-container {
-		background-image: url('../assets/mobile/contact-form.png');
-	}
-	.form-container {
-		/* change from row to column */
-		flex-direction: column;
-	}
-
-	.form-text-container {
-		width: 100%;
-		min-height: 430px;
-	}
-	.form-text-container p {
-		/* text to fit screen */
-		width: 100%;
-	}
-
-	.name-input-container {
-		flex-direction: column;
-	}
 
 	.gallery-container,
 	.group-one,
@@ -930,6 +908,31 @@ footer nav {
 
 	.image-la img {
 		height: 50px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	/* img url update to mobile */
+	.form-text-container {
+		background-image: url('../assets/mobile/contact-form.png');
+	}
+	.form-container {
+		/* change from row to column */
+		flex-direction: column;
+	}
+
+	.form-text-container {
+		width: 100%;
+		min-height: 430px;
+	}
+
+	.form-text-container p {
+		/* text to fit screen */
+		width: 100%;
+	}
+
+	.name-input-container {
+		flex-direction: column;
 	}
 }
 
