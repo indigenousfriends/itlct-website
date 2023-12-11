@@ -975,8 +975,8 @@ footer nav {
 
 	/* footer styles */
 
-	/* adjusting nav elements in footer */
-	footer nav {
-		flex-direction: column;
+	/* Land Acknowledge button placement */
+	.btn-la {
+		margin: -50px -120px 0 0;
 	}
 }
