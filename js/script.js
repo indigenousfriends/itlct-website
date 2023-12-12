@@ -6,15 +6,17 @@ const constructionButton = document.getElementById('hbutton');
 
 // construction warning labels disappears on X button click.
 
-constructionButton.addEventListener("click", function () {
-    // remove the button from the DOM
-    constructionBanner.style.display = "none";
+constructionButton.addEventListener('click', function () {
+	// remove the button from the DOM
+	constructionBanner.style.display = 'none';
 });
 
 // Form handling
 window.onload = function () {
-    var urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.has('success') && urlParams.get('success') === 'true') {
-    console.log('Message sent successfully');
-    }
-}
+	const urlParams = new URLSearchParams(window.location.search);
+	const success = document.querySelector('#contact-us-form .form-success-message');
+
+	if (urlParams.has('success') && urlParams.get('success') === 'true') {
+		success.classList.remove('hidden');
+	}
+};
