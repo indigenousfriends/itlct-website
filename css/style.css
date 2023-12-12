@@ -88,6 +88,7 @@
 html {
 	box-sizing: border-box;
 	font-size: 16px;
+	font-weight: var(--body-text-regular);
 }
 
 body {
@@ -107,7 +108,7 @@ img {
 	font-family: 'Lato', sans-serif;
 	font-size: 24px;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: var(--body-text-regular);
 	line-height: var(--line-height-lg);
 	position: absolute;
 	margin: 19px 0;
@@ -118,7 +119,7 @@ h2 {
 	font-family: Josefin Sans;
 	font-size: var(--font900);
 	font-style: normal;
-	font-weight: 700;
+	font-weight: var(--main-headings-regular);
 	margin-top: var(--spacing-large);
 }
 
