@@ -8,10 +8,10 @@
 /* VARIABLES */
 :root {
 	/* font families variables- linking fonts to the styles */
-	--main-headings: 'Josefin Sans', sans-serif;
-	--body-text: 'lato', sans-serif;
-	--detail-text: 'lato', sans-serif;
-	--button-text: 'Josefin Sans', sans-serif;
+	--main-headings: 'Josefin Sans', 'Helvetica', 'Arial', sans-serif;
+	--body-text: 'lato', 'Open Sans', 'Arial', sans-serif;
+	--detail-text: 'lato', 'Open Sans', 'Arial', sans-serif;
+	--button-text: 'Josefin Sans', 'Helvetica', 'Arial', sans-serif;
 
 	/* font weights */
 	--main-headings-400: 400;
@@ -863,7 +863,7 @@ footer nav {
 
 	.btn-la {
 		position: absolute;
-		right: 50%;
+		left: 50%;
 		top: 50%;
 		margin: -60px -144px 0 0;
 	}
