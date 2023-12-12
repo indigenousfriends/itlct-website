@@ -281,7 +281,7 @@
             </p>
           </div>
           <!-- contact form -->
-          <form class="contact-us-form" action="/data/form.php" method="post" name="contactForm">
+          <form id="contact-us-form" class="contact-us-form" action="/data/form.php" method="post" name="contactForm">
             <!-- This div is holding the first and last name sections of the form -->
             <div class="name-input-container">
               <!-- first name -->
@@ -309,7 +309,7 @@
             <div class="input-container">
               <label for="email">Email</label>
               <input
-                type="text"
+                type="email"
                 id="email"
                 name="email"
                 required
@@ -317,15 +317,15 @@
             </div>
             <!-- drop down -->
             <div class="input-container">
-              <label for="contact-dropdown">What can we help you with?</label>
+              <label for="destination">What can we help you with?</label>
               <select
-                name="contact-dropdown"
-                id="contact-dropdown"
+                name="destination"
+                id="destination"
                 class="form-item-select"
                 required>
                 <option disabled value="" selected>Select</option>
                 <option value="general">General</option>
-                <option value="events-programming">
+                <option value="events">
                   Events & Programming
                 </option>
                 <option value="join">Join the Team</option>
@@ -343,7 +343,10 @@
             </div>
             <!-- submit button -->
             <div class="submit-button">
-              <button>Submit</button>
+              <button type="submit">Submit</button>
+            </div>
+            <div class="form-success-message hidden">
+              <p>Thank you for your message. We will be in touch soon!</p>
             </div>
           </form>
         </div>
