@@ -11,9 +11,11 @@ constructionButton.addEventListener('click', function () {
 
 /* CONTACT FORM */
 window.onload = function () {
-	var urlParams = new URLSearchParams(window.location.search);
+	const urlParams = new URLSearchParams(window.location.search);
+	const success = document.querySelector('#contact-us-form .form-success-message');
+
 	if (urlParams.has('success') && urlParams.get('success') === 'true') {
-		console.log('Message sent successfully');
+		success.classList.remove('hidden');
 	}
 };
 
