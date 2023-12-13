@@ -8,10 +8,10 @@
 /* VARIABLES */
 :root {
 	/* font families variables- linking fonts to the styles */
-	--main-headings: 'Josefin Sans', sans-serif;
-	--body-text: 'lato', sans-serif;
-	--detail-text: 'lato', sans-serif;
-	--button-text: 'Josefin Sans', sans-serif;
+	--main-headings: 'Josefin Sans', 'Helvetica', 'Arial', sans-serif;
+	--body-text: 'lato', 'Open Sans', 'Arial', sans-serif;
+	--detail-text: 'lato', 'Open Sans', 'Arial', sans-serif;
+	--button-text: 'Josefin Sans', 'Helvetica', 'Arial', sans-serif;
 
 	/* font weights */
 	--main-headings-400: 400;
@@ -43,6 +43,7 @@
 	--cybergrape: #6c4681;
 	--onyx: #424241;
 	--yaleblue: #00478f;
+	--desert-sky: #266aae;
 	--hotpink: #fa6cb7;
 	--citrine: #d3c53f;
 	--citron: #92a32d;
@@ -64,6 +65,7 @@
 	--line-height-md: 1.5rem;
 	--line-height-lg: 2rem;
 	--line-height-xl: 2.8rem;
+	--line-height-xxl: 3.5rem;
 
 	--bold: bold;
 	--underline: underline;
@@ -88,6 +90,8 @@
 html {
 	box-sizing: border-box;
 	font-size: 16px;
+	font-weight: var(--body-text-regular);
+	font-family: var(--body-text);
 }
 
 body {
@@ -104,21 +108,20 @@ img {
 
 .learn-about-us {
 	color: var(--Black, #1a1a1a);
-	font-family: 'Lato', sans-serif;
 	font-size: 24px;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: var(--body-text-regular);
 	line-height: var(--line-height-lg);
 	position: absolute;
 	margin: 19px 0;
 }
 
 h2 {
-	color: var(--Teal, #007a80);
-	font-family: Josefin Sans;
+	color: var(--teal, #007a80);
+	font-family: var(--main-headings);
 	font-size: var(--font900);
 	font-style: normal;
-	font-weight: 700;
+	font-weight: var(--main-headings-regular);
 	margin-top: var(--spacing-large);
 }
 
@@ -161,7 +164,7 @@ hr {
 /* HEADER STYLES */
 header {
 	width: 100%;
-	background-image: url('../assets/images/hero-image.png');
+	background-image: url('../assets/images/hero-image.webp');
 	background-position: center;
 	background-size: cover;
 }
@@ -192,7 +195,7 @@ header {
 .hero-image {
 	width: 100%;
 	min-height: 300px;
-	background-image: url('../assets/images/global-ecosystem.png');
+	background-image: url('../assets/images/global-ecosystem.webp');
 	color: white;
 	display: flex;
 	align-items: flex-end;
@@ -262,20 +265,12 @@ header {
 
 /* logo container */
 .logohead {
-	min-width: 312px;
-	height: 124px;
+	width: 312px;
 }
 
 .footlogo {
 	width: 250px;
 	height: 100px;
-}
-
-header {
-	width: 100%;
-	background-image: url('../assets/images/hero-image.png');
-	background-position: center;
-	background-size: cover;
 }
 
 .social-media-icons {
@@ -301,8 +296,7 @@ header .wrapper {
 .logo {
 	display: flex;
 	align-self: center;
-	width: 252px;
-	height: 100 px;
+	width: 180px;
 	/* to center the logo vertically */
 }
 
@@ -549,9 +543,10 @@ option {
 	background: var(--bg-color);
 	padding: 20px;
 	background-image: url('../assets/images/contact-form.png');
-	background-color: var(--dark-teal);
+	background-color: var(--desert-sky);
 	background-position: center;
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 /* heading for form-text-container */
@@ -777,10 +772,19 @@ footer nav {
 }
 
 @media screen and (max-width: 768px) {
+	h2 {
+		font-size: var(--font600);
+		line-height: var(--line-height-xxl);
+	}
+
 	/* Header styles */
 
 	.under-construction {
 		padding: var(--spacing-small) var(--spacing-medium);
+	}
+
+	.title-section {
+		margin: var(--spacing-medium) 0 var(--spacing-small);
 	}
 
 	.wuc-paragraph {
@@ -791,18 +795,17 @@ footer nav {
 
 	/* logo sizing adjustments */
 	.logohead {
-		min-width: 124px;
-		height: 50px;
+		width: 180px;
 	}
 
-	.header {
-		background-image: url('../assets/mobile/hero-image.png');
+	header {
+		background-image: url('../assets/mobile/hero-image.webp');
 	}
 
 	/* who we are section */
 
 	.ecosystem-banner {
-		background-image: url('../assets/mobile/global-ecosystem.png');
+		background-image: url('../assets/mobile/global-ecosystem.webp');
 	}
 
 	/* What We Do Section */
@@ -862,9 +865,10 @@ footer nav {
 
 	.btn-la {
 		position: absolute;
-		right: 50%;
+		left: 50%;
 		top: 50%;
-		margin: -60px -144px 0 0;
+		margin: -35px 0 0 0;
+		transform: translate(-50%, -50%);
 	}
 
 	.modal {
@@ -942,10 +946,11 @@ footer nav {
 	.form-text-container {
 		width: 100%;
 		min-height: 430px;
-		background-position: top;
+		background-position: center 10vh;
 	}
 
 	.form-text-container h2 {
+		font-size: var(--font500);
 		line-height: normal;
 		margin-bottom: var(--spacing-small);
 	}
