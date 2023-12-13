@@ -7,22 +7,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $destination = $_POST['destination'];
     $message = $_POST['description'];
 
-    // $info = 'info@iftheselandscouldtalk.org';
-    // $events = 'events@iftheselandscouldtalk.org';
-
-    $test = 'max@indigenousfriends.org';
-    $testInfo = 'max+infotest@indigenousfriends.org';
-    $testEvents = 'max+events@indigenousfriends.org';
+    $info = 'info@iftheselandscouldtalk.org';
+    $events = 'events@iftheselandscouldtalk.org';
 
     $from = "info+websiteform@iftheselandscouldtalk.org";
-    $to = $test;
+    $to = $info;
     $cc = "";
 
     $successURL = $_SERVER['HTTP_REFERER'] . '?success=true#contact-us-form';
 
     if ($destination == 'events') {
-        $to = $testEvents;
-        $cc = $testInfo;
+        $to = $events;
+        $cc = $info;
         $regarding = 'events';
     } elseif ($destination == 'join') {
         $regarding = 'joining the team';
@@ -38,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         "Content-type: text/html; charset=iso-8859-1\r\n" .
         'X-Mailer: PHP/' . phpversion();
 
-    $body = "You have received a new message from the contact form on the If These Lands Could Talk website regarding $events.\n\n" . "Here are the details:\n\nName: $name\n\nEmail: $email\n\nMessage:\n$message";
+    $body = "You have received a new message from the contact form on the If These Lands Could Talk website regarding $regarding.\n\n" . "Here are the details:\n\nName: $name\n\nEmail: $email\n\nMessage:\n$message";
 
     if (mail($to, $subject, $body, $headers)) {
         header('Location: ' . $successURL);
