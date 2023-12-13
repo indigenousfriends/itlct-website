@@ -43,6 +43,7 @@
 	--cybergrape: #6c4681;
 	--onyx: #424241;
 	--yaleblue: #00478f;
+	--desert-sky: #266aae;
 	--hotpink: #fa6cb7;
 	--citrine: #d3c53f;
 	--citron: #92a32d;
@@ -64,7 +65,7 @@
 	--line-height-md: 1.5rem;
 	--line-height-lg: 2rem;
 	--line-height-xl: 2.8rem;
-	--line-height-xxl: 3.5srem;
+	--line-height-xxl: 3.5rem;
 
 	--bold: bold;
 	--underline: underline;
@@ -90,6 +91,7 @@ html {
 	box-sizing: border-box;
 	font-size: 16px;
 	font-weight: var(--body-text-regular);
+	font-family: var(--body-text);
 }
 
 body {
@@ -106,7 +108,6 @@ img {
 
 .learn-about-us {
 	color: var(--Black, #1a1a1a);
-	font-family: 'Lato', sans-serif;
 	font-size: 24px;
 	font-style: normal;
 	font-weight: var(--body-text-regular);
@@ -116,8 +117,8 @@ img {
 }
 
 h2 {
-	color: var(--Teal, #007a80);
-	font-family: Josefin Sans;
+	color: var(--teal, #007a80);
+	font-family: var(--main-headings);
 	font-size: var(--font900);
 	font-style: normal;
 	font-weight: var(--main-headings-regular);
@@ -264,20 +265,12 @@ header {
 
 /* logo container */
 .logohead {
-	min-width: 312px;
-	height: 124px;
+	width: 312px;
 }
 
 .footlogo {
 	width: 250px;
 	height: 100px;
-}
-
-header {
-	width: 100%;
-	background-image: url('../assets/images/hero-image.png');
-	background-position: center;
-	background-size: cover;
 }
 
 .social-media-icons {
@@ -303,8 +296,7 @@ header .wrapper {
 .logo {
 	display: flex;
 	align-self: center;
-	width: 252px;
-	height: 100 px;
+	width: 180px;
 	/* to center the logo vertically */
 }
 
@@ -551,9 +543,10 @@ option {
 	background: var(--bg-color);
 	padding: 20px;
 	background-image: url('../assets/images/contact-form.png');
-	background-color: var(--dark-teal);
+	background-color: var(--desert-sky);
 	background-position: center;
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 /* heading for form-text-container */
@@ -780,7 +773,7 @@ footer nav {
 
 @media screen and (max-width: 768px) {
 	h2 {
-		font-size: var(--font700);
+		font-size: var(--font600);
 		line-height: var(--line-height-xxl);
 	}
 
@@ -791,7 +784,7 @@ footer nav {
 	}
 
 	.title-section {
-		margin: var(--spacing-large) 0 var(--spacing-medium);
+		margin: var(--spacing-medium) 0 var(--spacing-small);
 	}
 
 	.wuc-paragraph {
@@ -802,11 +795,10 @@ footer nav {
 
 	/* logo sizing adjustments */
 	.logohead {
-		min-width: 124px;
-		height: 50px;
+		width: 180px;
 	}
 
-	.header {
+	header {
 		background-image: url('../assets/mobile/hero-image.webp');
 	}
 
@@ -875,7 +867,7 @@ footer nav {
 		position: absolute;
 		left: 50%;
 		top: 50%;
-		margin: -45px 0 0 0;
+		margin: -35px 0 0 0;
 		transform: translate(-50%, -50%);
 	}
 
@@ -954,10 +946,11 @@ footer nav {
 	.form-text-container {
 		width: 100%;
 		min-height: 430px;
-		background-position: top;
+		background-position: center 10vh;
 	}
 
 	.form-text-container h2 {
+		font-size: var(--font500);
 		line-height: normal;
 		margin-bottom: var(--spacing-small);
 	}
