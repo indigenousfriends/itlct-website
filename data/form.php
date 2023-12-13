@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         "Content-type: text/html; charset=iso-8859-1\r\n" .
         'X-Mailer: PHP/' . phpversion();
 
-    $body = "You have received a new message from the contact form on the If These Lands Could Talk website regarding $events.\n\n" . "Here are the details:\n\nName: $name\n\nEmail: $email\n\nMessage:\n$message";
+    $body = "You have received a new message from the contact form on the If These Lands Could Talk website regarding $regarding.\n\n" . "Here are the details:\n\nName: $name\n\nEmail: $email\n\nMessage:\n$message";
 
     if (mail($to, $subject, $body, $headers)) {
         header('Location: ' . $successURL);
