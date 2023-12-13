@@ -44,7 +44,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo 'Message sending failed';
     }
-}
 
     if ($destination == 'events') {
         $to = $testEvents;
@@ -67,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $body = "You have received a new message from the contact form on the If These Lands Could Talk website regarding $events.\n\n" . "Here are the details:\n\nName: $name\n\nEmail: $email\n\nMessage:\n$message";
 
     if (mail($to, $subject, $body, $headers)) {
-        header('Location: ' . $_SERVER['HTTP_REFERER'] . '#contact-us-form?success=true');
+        header('Location: ' . $_SERVER['HTTP_REFERER'] . '?success=true#contact-us-form');
         exit;
     } else {
         echo 'Message sending failed';
