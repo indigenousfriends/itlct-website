@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- /noindex -->
+  <meta name="robots" content="noindex">
+  <title>Fetch ITLCT Posts from Strapi</title>
+</head>
+
+<body>
+  <h1>Fetch Posts from Strapi</h1>
+  <div id="posts-container"></div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    // Fetch posts from Strapi
+    fetch('http://localhost:1337/api/posts', {
+      headers: {
+        'Authorization': 'Bearer 47337565984e2b97a7b4a0ca8f22048f4b5fc8939b671a4ac2a9439dd97061445f5ad369068f4039a8a520fc088c5cfc4c36ff5077f43f88efbe90f0175f0ad13d8e34fc384549b5ff08603518e6d934540ef7561f321975811a557c913d485dfb45e370fd8a707ae8d0ccd723bcaf8f7846761dce04c219bec8699d20576c82'
+      }
+    })
+      .then(response => response.json())
+      .then(response => {
+        const container = document.getElementById('posts-container');
+
+        response.data.forEach(post => {
+          console.log(post);
+          const postDiv = document.createElement('div');
+          const postTitle = document.createElement('h2');
+          const postContent = document.createElement('p');
+
+          postTitle.textContent = post.attributes.title;
+          postContent.innerHTML = marked.parse(post.attributes.body);
+
+          postDiv.appendChild(postTitle);
+          postDiv.appendChild(postContent);
+
+          container.appendChild(postDiv);
+        });
+      })
+      .catch(error => console.error('Error:', error));
+  </script>
+</body>
+
+</html>
