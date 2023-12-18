@@ -22,8 +22,9 @@
   <script>
     // Fetch posts from Strapi
     fetch('http://localhost:1337/api/posts', {
+      method: 'GET',
       headers: {
-        'Authorization': 'Bearer 47337565984e2b97a7b4a0ca8f22048f4b5fc8939b671a4ac2a9439dd97061445f5ad369068f4039a8a520fc088c5cfc4c36ff5077f43f88efbe90f0175f0ad13d8e34fc384549b5ff08603518e6d934540ef7561f321975811a557c913d485dfb45e370fd8a707ae8d0ccd723bcaf8f7846761dce04c219bec8699d20576c82'
+        'Content-Type': 'application/json'
       }
     })
       .then(response => response.json())
