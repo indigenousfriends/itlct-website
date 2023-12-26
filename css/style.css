@@ -1032,3 +1032,11 @@ footer nav {
 		margin: -50px -120px 0 0;
 	}
 }
+
+/* CMS */
+.post {
+	margin: 3rem auto;
+	max-width: 800px;
+	padding: 1.5rem;
+	border: 1px solid #ccc;
+}

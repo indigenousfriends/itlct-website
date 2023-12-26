@@ -6,24 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- /noindex -->
   <meta name="robots" content="noindex">
-  <title>ITLCT Homepage Demo from Strapi</title>
-  <link rel="stylesheet" href="./css/normalize.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
+  <title>ITLCT Event Single Demo from Strapi</title>
+  <link rel="stylesheet" href="../css/normalize.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
   <main>
     <div class="wrapper">
-      <h1 id="page-title">Homepage</h1>
+      <h1 id="post-title">Event Title</h1>
       <div id="content-container"></div>
-      <div id="event-container"></div>
     </div>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script src="./js/cms.js"></script>
+  <script src="../js/cms.js"></script>
   <script>
-    getPageData('homepage');
-    getCollectData('event');
+    getItemData('event-items');
   </script>
 </body>
 
